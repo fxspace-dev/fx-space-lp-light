@@ -777,18 +777,18 @@ function drawFintokeiChart(data, months, refBalance) {
         if (!animStart) animStart = timestamp;
         var elapsed = timestamp - animStart;
         ctx.clearRect(0, 0, w, h);
-        ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+        ctx.strokeStyle = 'rgba(0,0,0,0.08)';
         ctx.lineWidth = 1;
         for (var g = 0; g <= 4; g++) {
             var gy = padT + ch - (ch * g / 4);
             ctx.beginPath(); ctx.moveTo(padL, gy); ctx.lineTo(w - padR, gy); ctx.stroke();
             if (g > 0) {
-                ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.font = axisFont; ctx.textAlign = 'right';
+                ctx.fillStyle = 'rgba(0,0,0,0.4)'; ctx.font = axisFont; ctx.textAlign = 'right';
                 var yLabel = isMobile ? formatYenShort(maxVal * g / 4) : formatYen(maxVal * g / 4);
                 ctx.fillText(yLabel, padL - 6, gy + 4);
             }
         }
-        ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.font = axisFont; ctx.textAlign = 'center';
+        ctx.fillStyle = 'rgba(0,0,0,0.4)'; ctx.font = axisFont; ctx.textAlign = 'center';
         var step;
         if (isMobile) { step = months <= 6 ? 1 : (months <= 12 ? 3 : (months <= 24 ? 6 : 12)); }
         else { step = months <= 12 ? 1 : (months <= 24 ? 2 : 6); }
