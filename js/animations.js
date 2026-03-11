@@ -942,8 +942,11 @@ function drawFintokeiChart(data, months, refBalance) {
     if (!canvas) return;
     var ctx = canvas.getContext('2d');
     var dpr = window.devicePixelRatio || 1;
-    var w = canvas.clientWidth;
-    var h = canvas.clientHeight;
+    var rect = canvas.getBoundingClientRect();
+    var w = rect.width || 680;
+    var h = rect.height || 280;
+    if (w <= 0) w = 680;
+    if (h <= 0) h = 280;
     canvas.width = w * dpr;
     canvas.height = h * dpr;
     ctx.scale(dpr, dpr);

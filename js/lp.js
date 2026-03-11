@@ -749,8 +749,10 @@ function drawFintokeiChart(data, months, refBalance) {
     if (!canvas) return;
     var ctx = canvas.getContext('2d');
     var dpr = window.devicePixelRatio || 1;
-    var w = canvas.clientWidth;
-    var h = canvas.clientHeight;
+    var w = canvas.clientWidth || canvas.offsetWidth || 680;
+    var h = canvas.clientHeight || canvas.offsetHeight || 280;
+    if (w <= 0) w = 680;
+    if (h <= 0) h = 280;
     canvas.width = w * dpr;
     canvas.height = h * dpr;
     ctx.scale(dpr, dpr);
@@ -917,7 +919,7 @@ function drawFintokeiChart(data, months, refBalance) {
     }
 
     // Auto-run on scroll into view
-    var earnSection = document.querySelector('.earn-section');
+    var earnSection = document.querySelector('.earn-section') || document.querySelector('.fintokei-section');
     if (earnSection && typeof ScrollTrigger !== 'undefined') {
         ScrollTrigger.create({
             trigger: earnSection,

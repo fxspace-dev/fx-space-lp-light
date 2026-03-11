@@ -2897,38 +2897,29 @@ body {
 .fintokei-info-body { font-size: 0.8125rem; color: #4b5563; line-height: 1.8; margin: 0; }
 .fintokei-info-body strong { color: #1e1b4b; }
 
-/* Graph Card */
+/* Graph Card (unified simulator) */
 .fintokei-graph-card {
-    background: #fff; border-radius: 20px; padding: 1.5rem;
+    background: #fff; border-radius: 20px; padding: 1.5rem 1.5rem 1rem;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10); margin-bottom: 2rem;
     border: none;
 }
-.fintokei-graph-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; }
-.fintokei-graph-title { font-size: 0.875rem; font-weight: 700; color: #1e1b4b; }
-.fintokei-graph-label { font-size: 0.75rem; color: #6b7280; }
-.fintokei-graph-note { font-size: 0.6875rem; color: #6b7280; line-height: 1.5; margin-bottom: 0.75rem; }
-.fintokei-canvas { width: 100%; height: auto; }
-
-/* Result Cards */
-.fintokei-results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
-.fintokei-result-card {
-    background: #fff; border-radius: 16px; padding: 1.25rem;
-    text-align: center; box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-    border: none;
+.fintokei-sim-controls {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem; margin-bottom: 1rem;
 }
-.fintokei-result-label { font-size: 0.75rem; color: #6b7280; font-weight: 600; margin-bottom: 0.25rem; }
-.fintokei-result-value { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 900; }
+.fintokei-results-inline {
+    display: flex; align-items: center; justify-content: center;
+    gap: 1.5rem; margin-bottom: 0.75rem;
+    padding: 0.75rem 0; border-top: 1px solid rgba(0,0,0,0.06);
+}
+.fintokei-result-inline { text-align: center; }
+.fintokei-result-inline-label { font-size: 0.7rem; font-weight: 600; color: #6b7280; display: block; margin-bottom: 0.125rem; }
+.fintokei-result-inline-value { font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 900; }
+.fintokei-result-inline-divider { width: 1px; height: 2rem; background: rgba(0,0,0,0.1); }
 .fintokei-result-primary { color: #7B00E0; }
 .fintokei-result-accent { color: #7B00E0; }
-
-/* Simulator Card */
-.fintokei-sim-card {
-    background: #fff; border-radius: 20px; padding: 2rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-    border: none;
-}
-.fintokei-sim-title { font-size: 1rem; font-weight: 800; margin-bottom: 1.25rem; text-align: center; color: #1e1b4b; }
-.fintokei-sim-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+.fintokei-graph-note { font-size: 0.6875rem; color: #6b7280; line-height: 1.5; margin-top: 0.5rem; margin-bottom: 0; }
+.fintokei-canvas { width: 100%; height: 280px; }
 .fintokei-label { font-size: 0.75rem; font-weight: 700; color: #6b7280; display: block; margin-bottom: 0.375rem; }
 /* Custom plan selector */
 .fk-plan-col { position: relative; }
@@ -3024,9 +3015,9 @@ body {
     filter: brightness(0.95);
 }
 @media (max-width: 768px) {
-    .fintokei-sim-grid { grid-template-columns: 1fr; }
-    .fintokei-graph-header { flex-direction: column; gap: 0.25rem; }
+    .fintokei-sim-controls { grid-template-columns: 1fr; }
     .fintokei-canvas { height: 220px; }
+    .fintokei-results-inline { gap: 1rem; }
 }
 
 /* Interactive Flowchart */
