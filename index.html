@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FX SPACE - 勝ってる人は、ここにいた。（ライト版）</title>
+    <meta property="og:title" content="FX SPACE - 勝ってる人は、ここにいた。">
+    <meta property="og:description" content="日本最大規模のFXコミュニティ。プロトレーダー420名以上輩出。まずは無料でDiscordに参加。">
+    <meta property="og:image" content="https://fxspace-dev.github.io/fx-space-lp/img/og-preview-lp.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&family=Poppins:wght@600;700&family=Nunito:wght@700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- STICKY CTA BAR -->
+<div class="sticky-bar" id="sticky-bar">
+    <div class="sticky-bar-inner">
+        <img src="img/fxspace-logo-horizontal.png" alt="FX SPACE" class="sticky-bar-logo">
+        <a href="#pricing" class="btn btn-primary btn-sm sticky-bar-cta">参加する →</a>
+    </div>
+</div>
+
+<!-- =============================================
+     1. HERO — 3秒で「何これ」
+     ============================================= -->
+<section class="hero" id="hero">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--red bg-geo--hero-tl is-visible" aria-hidden="true">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--blue bg-geo--hero-br is-visible" aria-hidden="true">
+    <canvas id="hero-globe"></canvas>
+    <div class="hero-inner">
+        <div class="hero-center-group">
+            <img src="img/fxspace-logo-text.png" alt="FX SPACE" class="hero-logo-single">
+            <h1 class="heading-xl hero-gradient"><span class="word">勝ってる人は、ここにいた。</span></h1>
+        </div>
+    </div>
+    <div class="hero-bottom">
+        <p class="hero-subtitle-accent">日本最大規模プロトレーダー輩出機関</p>
+        <a href="https://discord.gg/CcUtqSdRDZ" target="_blank" class="btn btn-crayon-rect-orange hero-cta-btn">無料で覗いてみる →</a>
+    </div>
+</section>
+
+<!-- =============================================
+     ACHIEVEMENTS — 実績セクション
+     ============================================= -->
+<section class="achv" id="achievements">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--red bg-geo--achv-left" aria-hidden="true">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--blue bg-geo--achv-right" aria-hidden="true">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--mix bg-geo--achv-nums" aria-hidden="true">
+    <div class="achv-inner">
+        <span class="section-title-badge section-title-badge--blue"><img class="hero-title-side hero-title-side--left" src="img/title-side-blue-left.png" alt="">実績は？<img class="hero-title-side hero-title-side--right" src="img/title-side-blue-right.png" alt=""></span>
+        <h2 class="heading-lg text-center">数字が、証明する。</h2>
+        <div class="achv-nums">
+            <div class="achv-stat">
+                <span class="achv-stat-label">プロトレーダー輩出</span>
+                <span class="achv-stat-num"><span class="achv-count" data-target="420">0</span><span class="achv-stat-suffix">名+</span></span>
+            </div>
+            <div class="achv-stat">
+                <span class="achv-stat-label">プロップ審査 合格</span>
+                <span class="achv-stat-num"><span class="achv-count" data-target="300">0</span><span class="achv-stat-suffix">名+</span></span>
+            </div>
+            <div class="achv-stat">
+                <span class="achv-stat-label">メンバー総出金額</span>
+                <span class="achv-stat-num"><span class="achv-count" data-target="1.2" data-dec="1">0</span><span class="achv-stat-suffix">億円+</span></span>
+            </div>
+        </div>
+
+        <p class="achv-bridge" id="rolemodel">会社員、主婦、大学生 —— 普通の人たちが、<br>FX SPACEでプロへの道を歩んでいます。</p>
+
+        <div class="rm-carousel" id="rm-carousel">
+            <div class="rm-carousel-track">
+
+                <!-- ===== Slide 1: まささん ===== -->
+                <div class="rm-carousel-slide is-active">
+                    <div class="rolemodel-chart-wrap">
+                        <div class="rolemodel-chart-container">
+                            <svg class="rolemodel-chart" viewBox="0 0 800 494" preserveAspectRatio="xMidYMid meet">
+                                <defs><linearGradient id="rm-gradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="rgba(56,189,248,0.3)"/><stop offset="40%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#7dd3fc"/></linearGradient></defs>
+                                <line x1="80" y1="40" x2="760" y2="40" class="rm-grid"/><line x1="80" y1="110" x2="760" y2="110" class="rm-grid"/><line x1="80" y1="180" x2="760" y2="180" class="rm-grid"/><line x1="80" y1="250" x2="760" y2="250" class="rm-grid rm-zero-line"/><line x1="80" y1="340" x2="760" y2="340" class="rm-grid"/>
+                                <rect x="80" y="30" width="170" height="320" rx="8" class="rm-phase-zone rm-phase-zone--red"/><rect x="250" y="30" width="280" height="320" rx="8" class="rm-phase-zone rm-phase-zone--yellow"/><rect x="530" y="30" width="230" height="320" rx="8" class="rm-phase-zone rm-phase-zone--green"/>
+                                <rect x="100" y="33" width="130" height="22" rx="11" class="rm-phase-badge rm-phase-badge--red"/><rect x="305" y="33" width="170" height="22" rx="11" class="rm-phase-badge rm-phase-badge--yellow"/><rect x="580" y="33" width="130" height="22" rx="11" class="rm-phase-badge rm-phase-badge--green"/>
+                                <text x="165" y="49" class="rm-phase-label rm-phase-label--red" text-anchor="middle">ギャンブルトレード</text><text x="390" y="49" class="rm-phase-label rm-phase-label--yellow" text-anchor="middle">ゼロプロ90受講</text><text x="645" y="49" class="rm-phase-label rm-phase-label--green" text-anchor="middle">プロトレーダー</text>
+                                <text x="72" y="44" class="rm-axis-label" text-anchor="end">+1,000万</text><text x="72" y="114" class="rm-axis-label" text-anchor="end">+700万</text><text x="72" y="184" class="rm-axis-label" text-anchor="end">+300万</text><text x="72" y="254" class="rm-axis-label" text-anchor="end">0</text><text x="72" y="344" class="rm-axis-label" text-anchor="end">-400万</text>
+                                <text x="120" y="380" class="rm-axis-label" text-anchor="middle">2月</text><text x="200" y="380" class="rm-axis-label" text-anchor="middle">3月</text><text x="340" y="380" class="rm-axis-label" text-anchor="middle">5月</text><text x="460" y="380" class="rm-axis-label" text-anchor="middle">7月</text><text x="560" y="380" class="rm-axis-label" text-anchor="middle">9月</text><text x="700" y="380" class="rm-axis-label" text-anchor="middle">11月</text>
+                                <line x1="250" y1="35" x2="250" y2="350" class="rm-join-line"/><rect x="197" y="177" width="106" height="32" rx="16" class="rm-join-bg"/><text x="250" y="199" class="rm-join-text" text-anchor="middle">FX SPACE加入</text>
+                                <path class="rm-chart-line" d="M120,250 L132,246 L142,218 L152,195 L165,180 L170,198 L178,248 L186,298 L194,330 L200,340 L210,340 L225,340 L240,340 L260,340 L280,340 L300,340 L320,340 L340,340 L360,340 L380,340 L400,340 L420,340 L440,340 L460,340 L480,340 L500,340 L520,340 L540,340 L555,340 L562,328 L572,300 L580,272 L590,245 L600,218 L612,185 L620,168 L632,148 L645,135 L660,125 L675,118 L690,112 L700,110" fill="none" stroke="url(#rm-gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="502" y="287" width="106" height="32" rx="16" class="rm-join-bg rm-join-bg--fintokei"/><text x="555" y="309" class="rm-join-text rm-join-text--fintokei" text-anchor="middle">Fintokei合格</text>
+                                <circle cx="120" cy="250" r="6" class="rm-dot"/><circle cx="165" cy="180" r="6" class="rm-dot"/><circle cx="200" cy="340" r="6" class="rm-dot"/><circle cx="555" cy="340" r="6" class="rm-dot rm-dot--fintokei"/><circle cx="700" cy="110" r="7" class="rm-dot rm-dot--big"/>
+                                <text x="165" y="168" class="rm-dot-label rm-label-peak" text-anchor="middle">ビギナーズラック +300万</text><text x="230" y="330" class="rm-dot-label rm-label-bottom" text-anchor="middle">-400万</text><text x="692" y="98" class="rm-dot-label rm-label-top" text-anchor="end">1,100万出金 → トータル+700万</text>
+                                <!-- Summary stats inside chart -->
+                                <rect x="80" y="423" width="680" height="1" rx="0" fill="rgba(255,255,255,0.06)"/>
+                                <text x="193" y="454" class="rm-svg-stat-num" text-anchor="middle">7ヶ月</text><text x="193" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">加入からプロ達成</text>
+                                <line x1="307" y1="428" x2="307" y2="460" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                                <text x="420" y="454" class="rm-svg-stat-num" text-anchor="middle">+700万円</text><text x="420" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">トータル収支</text>
+                                <line x1="533" y1="428" x2="533" y2="460" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                                <text x="647" y="454" class="rm-svg-stat-num rm-svg-stat-active" text-anchor="middle">継続中</text><text x="647" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">現在もプロとして活動</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="rm-summary">
+                        <div class="rm-quote"><div class="rm-quote-inner"><p class="rm-quote-text">400万円の損失から一転、「環境認識の言語化」を武器に2ヶ月で1,100万円出金！ 労働ではなく<strong>「お金でお金を稼ぐ感覚」</strong>がようやく見え始めました。</p><p class="rm-quote-name">— まささん</p></div></div>
+                    </div>
+                </div>
+
+                <!-- ===== Slide 2: あかりさん ===== -->
+                <div class="rm-carousel-slide">
+                    <div class="rolemodel-chart-wrap">
+                        <div class="rolemodel-chart-container">
+                            <svg class="rolemodel-chart" viewBox="0 0 800 494" preserveAspectRatio="xMidYMid meet">
+                                <defs><linearGradient id="rm-gradient-3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="rgba(56,189,248,0.3)"/><stop offset="40%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#7dd3fc"/></linearGradient></defs>
+                                <line x1="80" y1="60" x2="760" y2="60" class="rm-grid"/><line x1="80" y1="130" x2="760" y2="130" class="rm-grid"/><line x1="80" y1="200" x2="760" y2="200" class="rm-grid"/><line x1="80" y1="270" x2="760" y2="270" class="rm-grid rm-zero-line"/><line x1="80" y1="340" x2="760" y2="340" class="rm-grid"/>
+                                <rect x="80" y="50" width="180" height="300" rx="8" class="rm-phase-zone rm-phase-zone--yellow"/><rect x="260" y="50" width="250" height="300" rx="8" class="rm-phase-zone rm-phase-zone--yellow" style="opacity:0.5"/><rect x="510" y="50" width="250" height="300" rx="8" class="rm-phase-zone rm-phase-zone--green"/>
+                                <rect x="123" y="53" width="94" height="22" rx="11" class="rm-phase-badge rm-phase-badge--yellow"/><rect x="338" y="53" width="94" height="22" rx="11" class="rm-phase-badge rm-phase-badge--yellow"/><rect x="575" y="53" width="120" height="22" rx="11" class="rm-phase-badge rm-phase-badge--green"/>
+                                <text x="170" y="69" class="rm-phase-label rm-phase-label--yellow" text-anchor="middle">デモ練習</text><text x="385" y="69" class="rm-phase-label rm-phase-label--yellow" text-anchor="middle">少額リアル</text><text x="635" y="69" class="rm-phase-label rm-phase-label--green" text-anchor="middle">月次プラス安定</text>
+                                <text x="72" y="64" class="rm-axis-label" text-anchor="end">+200万</text><text x="72" y="134" class="rm-axis-label" text-anchor="end">+150万</text><text x="72" y="204" class="rm-axis-label" text-anchor="end">+50万</text><text x="72" y="274" class="rm-axis-label" text-anchor="end">0</text><text x="72" y="344" class="rm-axis-label" text-anchor="end">-50万</text>
+                                <text x="100" y="380" class="rm-axis-label" text-anchor="middle">1月</text><text x="200" y="380" class="rm-axis-label" text-anchor="middle">2月</text><text x="310" y="380" class="rm-axis-label" text-anchor="middle">3月</text><text x="420" y="380" class="rm-axis-label" text-anchor="middle">4月</text><text x="520" y="380" class="rm-axis-label" text-anchor="middle">5月</text><text x="630" y="380" class="rm-axis-label" text-anchor="middle">6月</text><text x="740" y="380" class="rm-axis-label" text-anchor="middle">8月</text>
+                                <line x1="100" y1="55" x2="100" y2="350" class="rm-join-line"/><rect x="47" y="187" width="106" height="32" rx="16" class="rm-join-bg"/><text x="100" y="209" class="rm-join-text" text-anchor="middle">FX SPACE加入</text>
+                                <path class="rm-chart-line" d="M100,270 L130,272 L160,270 L190,268 L220,265 L250,268 L280,272 L310,278 L340,270 L370,260 L400,255 L430,248 L460,240 L490,230 L510,220 L530,205 L550,190 L570,175 L590,158 L610,142 L630,128 L650,115 L670,105 L690,95 L720,82 L740,72" fill="none" stroke="url(#rm-gradient-3)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="100" cy="270" r="6" class="rm-dot"/><circle cx="310" cy="278" r="6" class="rm-dot"/><circle cx="510" cy="220" r="6" class="rm-dot"/><circle cx="740" cy="72" r="7" class="rm-dot rm-dot--big"/>
+                                <text x="310" y="298" class="rm-dot-label rm-label-bottom" text-anchor="middle">少額で実践開始</text><text x="525" y="248" class="rm-dot-label rm-label-peak" text-anchor="middle">月次プラス転換</text><text x="760" y="115" class="rm-dot-label rm-label-top" text-anchor="end">トータル+180万</text>
+                                <!-- Summary stats inside chart -->
+                                <rect x="80" y="423" width="680" height="1" rx="0" fill="rgba(255,255,255,0.06)"/>
+                                <text x="193" y="454" class="rm-svg-stat-num" text-anchor="middle">6ヶ月</text><text x="193" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">月次プラス転換まで</text>
+                                <line x1="307" y1="428" x2="307" y2="460" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                                <text x="420" y="454" class="rm-svg-stat-num" text-anchor="middle">+180万円</text><text x="420" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">トータル収支</text>
+                                <line x1="533" y1="428" x2="533" y2="460" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                                <text x="647" y="454" class="rm-svg-stat-num rm-svg-stat-active" text-anchor="middle">継続中</text><text x="647" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">月次プラス3ヶ月連続</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="rm-summary">
+                        <div class="rm-quote"><div class="rm-quote-inner"><p class="rm-quote-text">子育ての合間にデモから始めました。<strong>「質問し放題」が本当にありがたくて</strong>、初歩的な質問にもよすがさんが丁寧に答えてくれる。半年で自分の手法が固まって、今は毎月プラスで終われています。</p><p class="rm-quote-name">— あかりさん</p></div></div>
+                    </div>
+                </div>
+
+                <!-- ===== Slide 4: りょうたさん ===== -->
+                <div class="rm-carousel-slide">
+                    <div class="rolemodel-chart-wrap">
+                        <div class="rolemodel-chart-container">
+                            <svg class="rolemodel-chart" viewBox="0 0 800 494" preserveAspectRatio="xMidYMid meet">
+                                <defs><linearGradient id="rm-gradient-4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="rgba(56,189,248,0.3)"/><stop offset="40%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#7dd3fc"/></linearGradient></defs>
+                                <line x1="80" y1="60" x2="760" y2="60" class="rm-grid"/><line x1="80" y1="130" x2="760" y2="130" class="rm-grid"/><line x1="80" y1="200" x2="760" y2="200" class="rm-grid"/><line x1="80" y1="270" x2="760" y2="270" class="rm-grid rm-zero-line"/><line x1="80" y1="340" x2="760" y2="340" class="rm-grid"/>
+                                <rect x="80" y="50" width="200" height="300" rx="8" class="rm-phase-zone rm-phase-zone--yellow"/><rect x="280" y="50" width="240" height="300" rx="8" class="rm-phase-zone rm-phase-zone--yellow" style="opacity:0.5"/><rect x="520" y="50" width="240" height="300" rx="8" class="rm-phase-zone rm-phase-zone--yellow" style="opacity:0.3"/>
+                                <rect x="118" y="53" width="124" height="22" rx="11" class="rm-phase-badge rm-phase-badge--yellow"/><rect x="332" y="53" width="136" height="22" rx="11" class="rm-phase-badge rm-phase-badge--yellow"/><rect x="585" y="53" width="120" height="22" rx="11" class="rm-phase-badge rm-phase-badge--yellow"/>
+                                <text x="180" y="69" class="rm-phase-label rm-phase-label--yellow" text-anchor="middle">デモ &amp; 基礎学習</text><text x="400" y="69" class="rm-phase-label rm-phase-label--yellow" text-anchor="middle">Fintokei Phase 1</text><text x="645" y="69" class="rm-phase-label rm-phase-label--yellow" text-anchor="middle">Phase 2 挑戦中</text>
+                                <text x="72" y="64" class="rm-axis-label" text-anchor="end">100%</text><text x="72" y="134" class="rm-axis-label" text-anchor="end">75%</text><text x="72" y="204" class="rm-axis-label" text-anchor="end">50%</text><text x="72" y="274" class="rm-axis-label" text-anchor="end">25%</text><text x="72" y="344" class="rm-axis-label" text-anchor="end">0%</text>
+                                <text x="110" y="380" class="rm-axis-label" text-anchor="middle">4月</text><text x="240" y="380" class="rm-axis-label" text-anchor="middle">5月</text><text x="370" y="380" class="rm-axis-label" text-anchor="middle">6月</text><text x="510" y="380" class="rm-axis-label" text-anchor="middle">7月</text><text x="640" y="380" class="rm-axis-label" text-anchor="middle">8月</text><text x="750" y="380" class="rm-axis-label" text-anchor="middle">9月</text>
+                                <line x1="110" y1="55" x2="110" y2="350" class="rm-join-line"/><rect x="57" y="187" width="106" height="32" rx="16" class="rm-join-bg"/><text x="110" y="209" class="rm-join-text" text-anchor="middle">FX SPACE加入</text>
+                                <path class="rm-chart-line" d="M110,330 L140,332 L170,335 L200,328 L230,318 L260,310 L280,305 L300,310 L320,300 L340,290 L360,280 L380,270 L400,255 L420,245 L440,235 L460,222 L480,210 L500,195 L520,180 L540,168 L560,158 L580,150 L600,142" fill="none" stroke="url(#rm-gradient-4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="rm-chart-line-dashed" d="M600,142 L620,136 L640,130 L660,125 L680,120 L700,116" fill="none" stroke="url(#rm-gradient-4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 6"/>
+                                <circle cx="110" cy="330" r="6" class="rm-dot"/><circle cx="300" cy="310" r="6" class="rm-dot"/><circle cx="520" cy="180" r="6" class="rm-dot rm-dot--fintokei"/><circle cx="700" cy="116" r="7" class="rm-dot rm-dot--big" stroke-dasharray="4 3"/>
+                                <text x="200" y="352" class="rm-dot-label rm-label-bottom" text-anchor="middle">バイト代で少額スタート</text><text x="540" y="198" class="rm-dot-label rm-label-peak" text-anchor="middle">Phase 1合格</text><text x="710" y="140" class="rm-dot-label rm-label-top" text-anchor="end">Phase 2 挑戦中 →</text>
+                                <!-- Summary stats inside chart -->
+                                <rect x="80" y="423" width="680" height="1" rx="0" fill="rgba(255,255,255,0.06)"/>
+                                <text x="193" y="454" class="rm-svg-stat-num" text-anchor="middle">3ヶ月</text><text x="193" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">Phase 1合格まで</text>
+                                <line x1="307" y1="428" x2="307" y2="460" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                                <text x="420" y="454" class="rm-svg-stat-num" text-anchor="middle">0円</text><text x="420" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">自己資金での損益</text>
+                                <line x1="533" y1="428" x2="533" y2="460" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                                <text x="647" y="454" class="rm-svg-stat-num rm-svg-stat-active" text-anchor="middle">挑戦中</text><text x="647" y="454" class="rm-svg-stat-label" text-anchor="middle" dy="17">Phase 2でプロ目前</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="rm-summary">
+                        <div class="rm-quote"><div class="rm-quote-inner"><p class="rm-quote-text">バイト代の一部で始めました。<strong>YTTのおかげでチャート分析のスピードが段違い</strong>。先輩トレーダーが「ここはこう見る」って具体的に教えてくれるから、独学とは成長速度が全然違います。</p><p class="rm-quote-name">— りょうたさん</p></div></div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="rm-carousel-arrow rm-carousel-prev" id="rm-prev" aria-label="前へ">&#8249;</button>
+            <button class="rm-carousel-arrow rm-carousel-next" id="rm-next" aria-label="次へ">&#8250;</button>
+        </div>
+        <div class="rm-chips">
+            <button class="rm-chip active" data-index="0"><img src="images/avatar-masa.png" alt="" class="rm-chip-avatar-img"><span class="rm-chip-name">まささん</span><span class="rm-chip-meta">会社員</span></button>
+            <button class="rm-chip" data-index="1"><span class="rm-chip-avatar" style="background:#ec4899;">A</span><span class="rm-chip-name">あかりさん</span><span class="rm-chip-meta">主婦</span></button>
+            <button class="rm-chip" data-index="2"><span class="rm-chip-avatar" style="background:#57f287;">R</span><span class="rm-chip-name">りょうたさん</span><span class="rm-chip-meta">大学生</span></button>
+        </div>
+
+    </div>
+</section>
+
+<hr class="section-divider">
+<!-- =============================================
+     4. VALUE PROP — 3枚で核心
+     ============================================= -->
+<section class="features-section" id="features">
+    <div class="section-glow section-glow--blue-l"></div>
+    <div class="section-glow section-glow--indigo-br"></div>
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--yellow bg-geo--center-left" aria-hidden="true">
+    <div class="features-inner">
+        <span class="section-title-badge section-title-badge--blue"><img class="hero-title-side hero-title-side--left" src="img/title-side-blue-left.png" alt="">なぜ結果が出るのか？<img class="hero-title-side hero-title-side--right" src="img/title-side-blue-right.png" alt=""></span>
+        <h2 class="heading-lg text-center">学ぶ。効率化する。稼ぐ。<br>そして仲間がいる。</h2>
+        <p class="features-lead">この4つを、すべてFX SPACE内で完結できます。</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-card-logos feature-card-logos--large">
+                    <img src="images/zeropro90-logo.png" alt="ゼロプロ90" class="feature-logo">
+                </div>
+                <h3>学ぶ</h3>
+                <p>体系的カリキュラム＋<span class="tooltip-wrap">90日集中プログラム<button class="tooltip-trigger" aria-label="用語説明">i</button><span class="tooltip-bubble">「ゼロプロ90」— 90日間でゼロからプロトレーダーを目指す集中カリキュラム。添削付き</span></span>。<br>プロが添削してくれるから、独学とは次元が違う。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-logos feature-card-logos--large">
+                    <img src="images/ytt_T.png" alt="YTT" class="feature-logo">
+                </div>
+                <h3>効率化する</h3>
+                <p>トレードをセットしておける半自動化ツール「<span class="tooltip-wrap">YTT<button class="tooltip-trigger" aria-label="用語説明">i</button><span class="tooltip-bubble">Yosuga Trading Tool。FX SPACE独自のチャート分析・半自動トレードツール</span></span>」で、チャートに張り付かずにトレードできる。<br>毎朝のシナリオ動画で、プロの視点が身につく。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-logos feature-card-logos--large">
+                    <img src="images/fintokei-logo-purple.png" alt="Fintokei" class="feature-logo">
+                </div>
+                <h3>稼ぐ</h3>
+                <p>運用資金ゼロでプロトレーダーへ。<br><span class="tooltip-wrap">Fintokei<button class="tooltip-trigger" aria-label="用語説明">i</button><span class="tooltip-bubble">デモ口座で審査に合格すると最大5,000万円の仮想資金で運用し、利益の80%以上を出金できるサービス</span></span>合格で、最大5,000万円の仮想資金を運用し利益の80%以上を出金できる。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-logos feature-card-logos--large">
+                    <img src="images/discord-logo.png" alt="Discord" class="feature-logo">
+                </div>
+                <h3>仲間がいる</h3>
+                <p>12,500名のメンバーが支え合うDiscordコミュニティ。<br>プロも初心者も、毎日リアルに交流しています。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+<!-- =============================================
+     学ぶ — ゼロプロ90 + Y Academy + シナリオ動画
+     ============================================= -->
+<section class="learn-section" id="learn">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--yellow bg-geo--center-left" aria-hidden="true">
+    <div class="learn-inner">
+        <span class="section-title-badge section-title-badge--blue"><img class="hero-title-side hero-title-side--left" src="img/title-side-blue-left.png" alt="">どうやって学ぶのか？<img class="hero-title-side hero-title-side--right" src="img/title-side-blue-right.png" alt=""></span>
+        <h2 class="heading-lg">答え合わせのある学び。</h2>
+        <p class="learn-lead">毎朝のシナリオ動画で相場観を磨き、<br>90日間の集中カリキュラムで実力をつける。</p>
+
+        <!-- タブボタン -->
+        <div class="learn-tabs">
+            <button class="learn-tab is-active" data-learn="zeropro">
+                <img src="images/zeropro90-logo.png" alt="ゼロプロ90" class="learn-tab-logo">
+                <div class="learn-tab-info">
+                    <h4 class="learn-tab-title">ゼロプロ90</h4>
+                    <p class="learn-tab-desc">90日集中プログラム</p>
+                </div>
+                <span class="learn-tab-arrow">→</span>
+            </button>
+            <button class="learn-tab" data-learn="scenario">
+                <img src="images/scenario-logo.png" alt="シナリオ動画" class="learn-tab-logo">
+                <div class="learn-tab-info">
+                    <h4 class="learn-tab-title">毎朝のシナリオ動画</h4>
+                    <p class="learn-tab-desc">平日毎朝のチャート分析</p>
+                </div>
+                <span class="learn-tab-arrow">→</span>
+            </button>
+            <button class="learn-tab" data-learn="vidnav">
+                <img src="images/vidnav-logo.png" alt="学習ナビ" class="learn-tab-logo">
+                <div class="learn-tab-info">
+                    <h4 class="learn-tab-title">学習ナビ</h4>
+                    <p class="learn-tab-desc">動画を簡単検索</p>
+                </div>
+                <span class="learn-tab-arrow">→</span>
+            </button>
+        </div>
+
+        <!-- パネル: ゼロプロ90 -->
+        <div class="learn-panel is-active" data-learn-panel="zeropro">
+            <div class="learn-panel-header learn-panel-header--center">
+                <img src="images/zeropro90-logo.png" alt="ゼロプロ90" class="learn-block-logo learn-block-logo--lg">
+                <p class="learn-block-desc">90日間でゼロからプロトレーダーを目指す集中カリキュラム。<br>毎週課題を提出し、よすが本人が動画で添削。独学では絶対に得られない成長速度。</p>
+            </div>
+            <div class="preview-panel is-active">
+                <div class="zp-dc-pair">
+                    <div class="zp-dc-flow-submit">
+                        <div class="zp-dc-col">
+                            <div class="zp-dc-step-header zp-dc-step-header--smart">
+                                <img src="img/num-1.png" alt="①" class="zp-dc-step-num-img">
+                                <h3>課題を提出</h3>
+                                <p>ステージごとのチャンネルにチャートとシナリオを投稿</p>
+                            </div>
+                            <div class="zp-dc-submit-row">
+                                <div class="zp-dc-sidebar">
+                                    <div class="zp-dc-sb-cat">課題</div>
+                                    <div class="zp-dc-sb-ch">基礎の理解｜説明</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#9b59b6"></span>基礎の理解</div>
+                                    <div class="zp-dc-sb-sep"></div>
+                                    <div class="zp-dc-sb-ch">ライン｜説明</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#2ecc71"></span>ライン｜a</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#2ecc71"></span>ライン｜b</div>
+                                    <div class="zp-dc-sb-sep"></div>
+                                    <div class="zp-dc-sb-ch">シナリオ｜説明</div>
+                                    <div class="zp-dc-sb-ch zp-dc-sb-active"><span class="zp-dc-sb-dot" style="background:#3498db"></span>シナリオ｜a</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#3498db"></span>シナリオ｜b</div>
+                                    <div class="zp-dc-sb-sep"></div>
+                                    <div class="zp-dc-sb-ch">理想タイミング｜説明</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#f1c40f"></span>理想タイミング｜a</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#f1c40f"></span>理想タイミング｜b</div>
+                                    <div class="zp-dc-sb-sep"></div>
+                                    <div class="zp-dc-sb-ch">現実タイミング｜説明</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#e74c3c"></span>現実タイミング｜a</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#e74c3c"></span>現実タイミング｜b</div>
+                                    <div class="zp-dc-sb-sep"></div>
+                                    <div class="zp-dc-sb-ch">過去相場検証｜説明</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#9b59b6"></span>過去相場検証｜a</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#9b59b6"></span>過去相場検証｜b</div>
+                                    <div class="zp-dc-sb-sep"></div>
+                                    <div class="zp-dc-sb-ch">リアル｜説明</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#e74c3c"></span>リアル｜a</div>
+                                    <div class="zp-dc-sb-ch"><span class="zp-dc-sb-dot" style="background:#e74c3c"></span>リアル｜b</div>
+                                </div>
+                                <div class="zp-discord">
+                                    <div class="zp-dc-header">
+                                        <span class="zp-dc-hash">#</span> 🔵 シナリオ｜a
+                                    </div>
+                                    <div class="zp-dc-body">
+                                        <div class="zp-dc-divider"><span>2026年2月16日</span></div>
+                                        <div class="zp-dc-msg">
+                                            <div class="zp-dc-avatar zp-dc-av-s">た</div>
+                                            <div class="zp-dc-content">
+                                                <div class="zp-dc-name">たくみ <span class="zp-dc-time">2026/02/16(月) 7:26</span></div>
+                                                <div class="zp-dc-text">
+                                                    添削ありがとうございます。<br><br>
+                                                    ■課題：シナリオ構築<br>
+                                                    ■回数：7回目<br><br>
+                                                    ■ナウキャスト(GBPJPY　2026.2.6)<br>
+                                                    H4：上昇トレンド。赤ライン遠方<br>
+                                                    H1：下降トレンド。ラインブレイク<br>
+                                                    M15：下降トレンドブレイク。<br><br>
+                                                    ■シナリオ根拠(M15)<br>
+                                                    ・ロング<br>
+                                                    H4チャネル内、直近下降チャネルをブレイクしたのでロングにて構築。
+                                                </div>
+                                                <div class="zp-dc-images">
+                                                    <img src="images/zp-chart-h4-b.png" alt="H4チャート">
+                                                    <img src="images/zp-chart-h1-b.png" alt="H1チャート">
+                                                    <img src="images/zp-chart-m15-b.png" alt="M15チャート">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="zp-dc-divider"><span>2026年2月18日</span></div>
+                                        <div class="zp-dc-msg">
+                                            <div class="zp-dc-avatar" style="background:#e67e22;">ゆ</div>
+                                            <div class="zp-dc-content">
+                                                <div class="zp-dc-name">ゆう <span class="zp-dc-time">2026/02/18(水) 8:52</span></div>
+                                                <div class="zp-dc-text">
+                                                    添削よろしくお願いいたします。<br><br>
+                                                    ■課題：シナリオ4期添削<br>
+                                                    ■回数：2回目<br><br>
+                                                    ■ナウキャスト（AUDUSD 2023.11）<br>
+                                                    H4 ：下降トレンド減速（転換時期？）、ライン付近<br>
+                                                    H1 ：下降トレンド。チャネルライン付近<br>
+                                                    M15：上昇トレンド。チャネルと上昇ライン付近<br><br>
+                                                    ■シナリオ根拠(M15)<br>
+                                                    ・ショート<br>
+                                                    H4は下降トレンドが上昇・転換のきざしがあるが、ショートはまだ衰えていないのでキープ。<br>
+                                                    H1チャネル上限にあって、M15は上昇チャネル上限に乗ったところなので、<br>
+                                                    M15でまずくショート構築を。以上M15のチャネル上限ライン付近にて。<br><br>
+                                                    <span class="zp-dc-question">🔸🔸🔸<br>質問：H4が上昇転換しかけるようなので、M15の上昇チャネルと上方の赤チャネルを上抜けて上昇方向の動きがあればロングのシナリオ構築ができますでしょうか？よろしくお願いいたします。<br>🔸🔸🔸</span>
+                                                </div>
+                                                <div class="zp-dc-images">
+                                                    <img src="images/zp-chart-h4-c.png" alt="H4チャート">
+                                                    <img src="images/zp-chart-h1-c.png" alt="H1チャート">
+                                                    <img src="images/zp-chart-m15-c.png" alt="M15チャート">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="zp-dc-flow-review">
+                        <div class="zp-dc-col">
+                            <div class="zp-dc-step-header zp-dc-step-header--smart">
+                                <img src="img/num-2.png" alt="②" class="zp-dc-step-num-img">
+                                <h3>動画で添削</h3>
+                                <p>よすがが全員分をまとめて動画で徹底指導</p>
+                            </div>
+                            <div class="zp-dc-submit-row">
+                                <div class="zp-dc-sidebar">
+                                    <div class="zp-dc-sb-cat">📢 お知らせ</div>
+                                    <div class="zp-dc-sb-ch">🔑 はじめに</div>
+                                    <div class="zp-dc-sb-ch">使い方</div>
+                                    <div class="zp-dc-sb-ch">自己紹介</div>
+                                    <div class="zp-dc-sb-sep"></div>
+                                    <div class="zp-dc-sb-cat">ライブ</div>
+                                    <div class="zp-dc-sb-ch">📅 ライブ予定</div>
+                                    <div class="zp-dc-sb-ch">ライブ用テキスト</div>
+                                    <div class="zp-dc-sb-ch">💡 ライブ</div>
+                                    <div class="zp-dc-sb-sep"></div>
+                                    <div class="zp-dc-sb-cat">学習</div>
+                                    <div class="zp-dc-sb-ch zp-dc-sb-active">📎 添削</div>
+                                    <div class="zp-dc-sb-ch">📊 演習リスト</div>
+                                    <div class="zp-dc-sb-ch">🤝 相談雑談</div>
+                                    <div class="zp-dc-sb-ch">操作、使い方相談</div>
+                                    <div class="zp-dc-sb-ch">📦 アウトプット</div>
+                                    <div class="zp-dc-sb-ch">オフ会参加</div>
+                                </div>
+                                <div class="zp-discord">
+                                    <div class="zp-dc-header">
+                                        <span class="zp-dc-hash">#</span> 📎 添削
+                                    </div>
+                                    <div class="zp-dc-body">
+                                        <div class="zp-dc-divider"><span>2026年2月17日</span></div>
+                                        <div class="zp-dc-msg">
+                                            <div class="zp-dc-avatar zp-dc-av-yosuga"><img src="images/yosuga-avatar.png" alt="yosuga"></div>
+                                            <div class="zp-dc-content">
+                                                <div class="zp-dc-name" style="color:#e74c3c">yosuga <span class="zp-dc-time">2026/02/17(火) 12:48</span></div>
+                                                <div class="zp-dc-text zp-dc-link">https://youtu.be/1skZkSzPx2w</div>
+                                                <div class="zp-dc-yt-embed">
+                                                    <div class="zp-dc-yt-left">
+                                                        <div class="zp-dc-yt-label">YouTube</div>
+                                                        <div class="zp-dc-yt-channel">よすが｜FX SPACE</div>
+                                                        <div class="zp-dc-yt-title">B【2/17】ゼロプロ4期添削</div>
+                                                    </div>
+                                                    <div class="zp-dc-yt-thumb">
+                                                        <img src="images/zp-chart-h4-b.png" alt="動画サムネイル">
+                                                        <div class="zp-dc-yt-play">▶</div>
+                                                    </div>
+                                                </div>
+                                                <div class="zp-dc-reactions">
+                                                    <span class="zp-dc-react">😊 28</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="zp-dc-divider"><span>2026年2月18日</span></div>
+                                        <div class="zp-dc-msg">
+                                            <div class="zp-dc-avatar zp-dc-av-yosuga"><img src="images/yosuga-avatar.png" alt="yosuga"></div>
+                                            <div class="zp-dc-content">
+                                                <div class="zp-dc-name" style="color:#e74c3c">yosuga <span class="zp-dc-time">2026/02/18(水) 11:35</span></div>
+                                                <div class="zp-dc-text zp-dc-link">https://youtu.be/CEXTm7hHnUc</div>
+                                                <div class="zp-dc-yt-embed">
+                                                    <div class="zp-dc-yt-left">
+                                                        <div class="zp-dc-yt-label">YouTube</div>
+                                                        <div class="zp-dc-yt-channel">よすが｜FX SPACE</div>
+                                                        <div class="zp-dc-yt-title">A【2/18】ゼロプロ4期添削2</div>
+                                                    </div>
+                                                    <div class="zp-dc-yt-thumb">
+                                                        <img src="images/zp-chart-h4.png" alt="動画サムネイル">
+                                                        <div class="zp-dc-yt-play">▶</div>
+                                                    </div>
+                                                </div>
+                                                <div class="zp-dc-reactions">
+                                                    <span class="zp-dc-react">😊 24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="zp-dc-divider"><span>2026年2月19日</span></div>
+                                        <div class="zp-dc-msg">
+                                            <div class="zp-dc-avatar zp-dc-av-yosuga"><img src="images/yosuga-avatar.png" alt="yosuga"></div>
+                                            <div class="zp-dc-content">
+                                                <div class="zp-dc-name" style="color:#e74c3c">yosuga <span class="zp-dc-time">2026/02/19(木) 11:00</span></div>
+                                                <div class="zp-dc-text zp-dc-link">https://youtu.be/kWyaC-d7t4Q</div>
+                                                <div class="zp-dc-yt-embed">
+                                                    <div class="zp-dc-yt-left">
+                                                        <div class="zp-dc-yt-label">YouTube</div>
+                                                        <div class="zp-dc-yt-channel">よすが｜FX SPACE</div>
+                                                        <div class="zp-dc-yt-title">B【2/19】ゼロプロ4期添削</div>
+                                                    </div>
+                                                    <div class="zp-dc-yt-thumb">
+                                                        <img src="images/zp-chart-h1-b.png" alt="動画サムネイル">
+                                                        <div class="zp-dc-yt-play">▶</div>
+                                                    </div>
+                                                </div>
+                                                <div class="zp-dc-reactions">
+                                                    <span class="zp-dc-react">😊 28</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="zp-dc-divider"><span>2026年2月20日</span></div>
+                                        <div class="zp-dc-msg">
+                                            <div class="zp-dc-avatar zp-dc-av-yosuga"><img src="images/yosuga-avatar.png" alt="yosuga"></div>
+                                            <div class="zp-dc-content">
+                                                <div class="zp-dc-name" style="color:#e74c3c">yosuga <span class="zp-dc-time">2026/02/20(金) 12:02</span></div>
+                                                <div class="zp-dc-text zp-dc-link">https://youtu.be/qsM3ttsj6ps</div>
+                                                <div class="zp-dc-yt-embed">
+                                                    <div class="zp-dc-yt-left">
+                                                        <div class="zp-dc-yt-label">YouTube</div>
+                                                        <div class="zp-dc-yt-channel">よすが｜FX SPACE</div>
+                                                        <div class="zp-dc-yt-title">A【2/20】ゼロプロ4期添削2</div>
+                                                    </div>
+                                                    <div class="zp-dc-yt-thumb">
+                                                        <img src="images/zp-chart-h1.png" alt="動画サムネイル">
+                                                        <div class="zp-dc-yt-play">▶</div>
+                                                    </div>
+                                                </div>
+                                                <div class="zp-dc-reactions">
+                                                    <span class="zp-dc-react">😊 25</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- パネル: シナリオ動画 -->
+        <div class="learn-panel" data-learn-panel="scenario">
+            <div class="learn-panel-header learn-panel-header--center">
+                <img src="images/scenario-logo.png" alt="シナリオ動画" class="learn-block-logo learn-block-logo--xlg">
+                <div>
+                    <h3 class="learn-block-title">毎朝のシナリオ動画</h3>
+                    <p class="learn-block-desc">よすがが平日毎朝チャートを分析。「こうなったらエントリー」を具体的に解説します。</p>
+                </div>
+            </div>
+            <div class="learn-scenario-row">
+                <div class="learn-scenario-info">
+                    <ul class="learn-scenario-features">
+                        <li>
+                            <span class="learn-scenario-feat-icon">📅</span>
+                            <div>
+                                <strong>平日毎朝配信</strong>
+                                <span>その日のトレード戦略を午前中に動画で共有</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="learn-scenario-feat-icon">🎯</span>
+                            <div>
+                                <strong>「こうなったらエントリー」を明確に</strong>
+                                <span>値動きのシナリオとエントリーポイントを具体的に解説</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="learn-scenario-feat-icon">📊</span>
+                            <div>
+                                <strong>スタンダード：主要3通貨ペア</strong>
+                                <span>XAUUSD・USDJPY・GBPUSDを毎日分析</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="learn-scenario-feat-icon">👑</span>
+                            <div>
+                                <strong>プレミアム：全主要通貨ペア</strong>
+                                <span>すべての主要通貨ペアのシナリオを閲覧可能</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="learn-scenario-chat-wrap">
+                    <div class="community-chat static-chat">
+                        <div class="cc-header"><span class="cc-header-hash">#</span><span class="cc-header-name">朝のシナリオ公開</span></div>
+                        <div class="cc-body">
+                            <div class="cc-messages">
+                                <div class="cc-msg">
+                                    <div class="cc-avatar cc-avatar-yosuga"></div>
+                                    <div class="cc-msg-body">
+                                        <div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">よすが</span><span class="cc-msg-time">昨日 07:25</span></div>
+                                        <div class="cc-msg-content">@everyone おはようございます！</div>
+                                        <div class="cc-yt-embed">
+                                            <div class="cc-yt-thumb">
+                                                <div class="cc-yt-play">▶</div>
+                                            </div>
+                                            <div class="cc-yt-info">
+                                                <span class="cc-yt-title">【3/4】朝のシナリオ構築 XAUUSD・USDJPY<br>・GBPUSD</span>
+                                                <span class="cc-yt-channel">よすが FX SPACE</span>
+                                            </div>
+                                        </div>
+                                        <div class="cc-chart-grid">
+                                            <div class="cc-chart-item">
+                                                <img src="images/chart-xauusd.png" alt="XAUUSD">
+                                                <span class="cc-chart-label">XAUUSD</span>
+                                            </div>
+                                            <div class="cc-chart-item">
+                                                <img src="images/chart-usdjpy.png" alt="USDJPY">
+                                                <span class="cc-chart-label">USD/JPY</span>
+                                            </div>
+                                            <div class="cc-chart-item">
+                                                <img src="images/chart-gbpusd.png" alt="GBPUSD">
+                                                <span class="cc-chart-label">GBP/USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="cc-reactions"><span class="cc-reaction"><span class="lp-reaction-icon lp-reaction-fire"></span> <span class="cc-reaction-count">28</span></span><span class="cc-reaction"><span class="lp-reaction-icon lp-reaction-check"></span> <span class="cc-reaction-count">15</span></span><span class="cc-reaction"><span class="lp-reaction-icon lp-reaction-thanks"></span> <span class="cc-reaction-count">21</span></span></div>
+                                    </div>
+                                </div>
+                                <div class="cc-msg">
+                                    <div class="cc-avatar cc-avatar-yosuga"></div>
+                                    <div class="cc-msg-body">
+                                        <div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">よすが</span><span class="cc-msg-time">今日 07:30</span></div>
+                                        <div class="cc-msg-content">@everyone おはようございます！</div>
+                                        <div class="cc-yt-embed">
+                                            <div class="cc-yt-thumb">
+                                                <div class="cc-yt-play">▶</div>
+                                            </div>
+                                            <div class="cc-yt-info">
+                                                <span class="cc-yt-title">【3/5】朝のシナリオ構築 XAUUSD・USDJPY<br>・GBPUSD</span>
+                                                <span class="cc-yt-channel">よすが FX SPACE</span>
+                                            </div>
+                                        </div>
+                                        <div class="cc-chart-grid">
+                                            <div class="cc-chart-item">
+                                                <img src="images/chart-xauusd.png" alt="XAUUSD">
+                                                <span class="cc-chart-label">XAUUSD</span>
+                                            </div>
+                                            <div class="cc-chart-item">
+                                                <img src="images/chart-usdjpy.png" alt="USDJPY">
+                                                <span class="cc-chart-label">USD/JPY</span>
+                                            </div>
+                                            <div class="cc-chart-item">
+                                                <img src="images/chart-gbpusd.png" alt="GBPUSD">
+                                                <span class="cc-chart-label">GBP/USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="cc-reactions"><span class="cc-reaction"><span class="lp-reaction-icon lp-reaction-fire"></span> <span class="cc-reaction-count">34</span></span><span class="cc-reaction"><span class="lp-reaction-icon lp-reaction-check"></span> <span class="cc-reaction-count">18</span></span><span class="cc-reaction"><span class="lp-reaction-icon lp-reaction-thanks"></span> <span class="cc-reaction-count">25</span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cc-input"><span class="cc-input-plus">＋</span><span class="cc-input-text">#朝のシナリオ公開 でメッセージを送信</span></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- パネル: 学習ナビ -->
+        <div class="learn-panel" data-learn-panel="vidnav">
+            <div class="learn-panel-header learn-panel-header--center">
+                <img src="images/vidnav-logo.png" alt="学習ナビ" class="learn-block-logo learn-block-logo--lg">
+                <div>
+                    <h3 class="learn-block-title">よすが式トレード学習ナビ</h3>
+                    <p class="learn-block-desc">各動画を簡単に検索できるサービスです。スマホからも使用可能。</p>
+                </div>
+            </div>
+            <div class="vidnav-mock">
+                <div class="vidnav-topbar">
+                    <span class="vidnav-topbar-icon">📚</span>
+                    <span class="vidnav-topbar-title">よすが式トレード学習ナビ</span>
+                </div>
+                <div class="vidnav-controls">
+                    <div class="vidnav-search">
+                        <span class="vidnav-search-icon">🔍</span>
+                        <input type="text" class="vidnav-search-input" placeholder="キーワードで動画を検索…" readonly>
+                    </div>
+                    <div class="vidnav-filters">
+                        <span class="vidnav-filter-label">テーマ別</span>
+                        <button class="vidnav-tag vidnav-tag--active">ALL</button>
+                        <button class="vidnav-tag">ライン</button>
+                        <button class="vidnav-tag">シナリオ</button>
+                        <button class="vidnav-tag">ゼロプロ</button>
+                        <button class="vidnav-tag">インタビュー</button>
+                    </div>
+                    <div class="vidnav-filters">
+                        <span class="vidnav-filter-label">レベル別</span>
+                        <button class="vidnav-tag vidnav-tag--level vidnav-tag--active">ALL</button>
+                        <button class="vidnav-tag vidnav-tag--level">初心者</button>
+                        <button class="vidnav-tag vidnav-tag--level">中級者</button>
+                        <button class="vidnav-tag vidnav-tag--level">上級者</button>
+                    </div>
+                </div>
+                <div class="vidnav-grid">
+                    <div class="vidnav-card">
+                        <div class="vidnav-thumb vidnav-thumb--1"><div class="vidnav-play">▶</div></div>
+                        <div class="vidnav-card-body">
+                            <div class="vidnav-card-title">よすが式ダウ手法 完全解説</div>
+                            <div class="vidnav-card-meta">
+                                <span class="vidnav-card-tag vidnav-card-tag--theme">ライン</span>
+                                <span class="vidnav-card-tag vidnav-card-tag--level">初心者</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidnav-card">
+                        <div class="vidnav-thumb vidnav-thumb--2"><div class="vidnav-play">▶</div></div>
+                        <div class="vidnav-card-body">
+                            <div class="vidnav-card-title">100万トレード部屋作り #1</div>
+                            <div class="vidnav-card-meta">
+                                <span class="vidnav-card-tag vidnav-card-tag--theme">インタビュー</span>
+                                <span class="vidnav-card-tag vidnav-card-tag--level">初心者</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidnav-card">
+                        <div class="vidnav-thumb vidnav-thumb--3"><div class="vidnav-play">▶</div></div>
+                        <div class="vidnav-card-body">
+                            <div class="vidnav-card-title">10万チャレンジャー密着</div>
+                            <div class="vidnav-card-meta">
+                                <span class="vidnav-card-tag vidnav-card-tag--theme">インタビュー</span>
+                                <span class="vidnav-card-tag vidnav-card-tag--level">中級者</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidnav-card">
+                        <div class="vidnav-thumb vidnav-thumb--4"><div class="vidnav-play">▶</div></div>
+                        <div class="vidnav-card-body">
+                            <div class="vidnav-card-title">ゼロプロ90 4期 募集開始！</div>
+                            <div class="vidnav-card-meta">
+                                <span class="vidnav-card-tag vidnav-card-tag--theme">ゼロプロ</span>
+                                <span class="vidnav-card-tag vidnav-card-tag--level">初心者</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vidnav-cta">
+                <a href="https://www.notion.so/_CONTENTS-Navi-2e1a8fb35191806e9e50c7f37235897b" target="_blank" rel="noopener" class="vidnav-link-btn">学習ナビを開く →</a>
+            </div>
+        </div>
+
+</section>
+
+<hr class="section-divider">
+<!-- =============================================
+     効率化する — YTT
+     ============================================= -->
+<section class="tools-section" id="tools">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--blue bg-geo--top-right" aria-hidden="true">
+    <div class="tools-inner">
+        <span class="section-title-badge section-title-badge--blue"><img class="hero-title-side hero-title-side--left" src="img/title-side-blue-left.png" alt="">どうやって効率化するのか？<img class="hero-title-side hero-title-side--right" src="img/title-side-blue-right.png" alt=""></span>
+        <h2 class="heading-lg">トレードの常識を変えるツール。</h2>
+        <div class="tools-logo-wrap">
+            <img src="images/ytt_T.png" alt="YTT" class="tools-ytt-logo">
+        </div>
+        <p class="tools-lead">FX SPACE独自のトレードツール。<br>注文・分析・リスク管理をひとつに。チャートに張り付く時代は終わりました。</p>
+        <div class="preview-panel is-active">
+                <div class="lp-ytt-grid">
+                    <div class="ytt-panel" id="ytt-p1">
+                        <div class="ytt-panel-inner">
+                            <div class="ytt-panel-text">
+                                <img src="img/crayon-1.png" alt="①" class="ytt-panel-num-img">
+                                <h3>直感的な注文・決済</h3>
+                                <p>ロット数を指定してBUY/SELLボタンで即座に注文。多彩な決済機能でポジション管理も自在。</p>
+                                <ul><li>BUY / SELL ワンタッチ注文</li><li>全決済・1/2決済ボタン</li><li>複数ポジション個別管理</li><li>リアルタイム損益表示</li></ul>
+                            </div>
+                            <div class="ytt-panel-scene">
+                                <svg viewBox="0 0 280 220" preserveAspectRatio="xMidYMid meet">
+                                    <rect id="p1-panel" x="50" y="5" width="180" height="210" rx="8" fill="#2b2d31" opacity="1"></rect>
+                                    <text x="140" y="22" fill="rgba(255,255,255,0.5)" text-anchor="middle" font-size="8" font-weight="600" font-family="Inter">注文パネル</text>
+                                    <g>
+                                        <rect x="68" y="28" width="26" height="27" rx="4" fill="#3f4147"></rect>
+                                        <text x="81" y="40" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-size="9" font-family="Inter">▲</text>
+                                        <text x="81" y="51" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-size="9" font-family="Inter">▼</text>
+                                        <rect x="98" y="28" width="80" height="27" rx="4" fill="#1e1f22" stroke="#3f4147" stroke-width="0.8"></rect>
+                                        <text x="138" y="47" fill="white" text-anchor="middle" font-size="16" font-weight="800" font-family="Inter">0.01</text>
+                                        <rect x="182" y="28" width="30" height="27" rx="4" fill="#3f4147"></rect>
+                                        <rect x="190" y="40" width="3" height="10" rx="0.5" fill="rgba(255,255,255,0.5)"></rect>
+                                        <rect x="195" y="36" width="3" height="14" rx="0.5" fill="rgba(255,255,255,0.5)"></rect>
+                                        <rect x="200" y="42" width="3" height="8" rx="0.5" fill="rgba(255,255,255,0.5)"></rect>
+                                        <polygon points="202,40 206,40 204,36" fill="rgba(255,255,255,0.5)"></polygon>
+                                    </g>
+                                    <g>
+                                        <rect x="58" y="60" width="82" height="36" rx="5" fill="#8B1A1A"></rect>
+                                        <text x="99" y="77" fill="white" text-anchor="middle" font-size="14" font-weight="900" font-family="Inter">SELL</text>
+                                        <text x="99" y="90" fill="rgba(255,255,255,0.5)" text-anchor="middle" font-size="8" font-family="Inter">0.01 lot</text>
+                                    </g>
+                                    <g>
+                                        <rect x="144" y="60" width="82" height="36" rx="5" fill="#1D5FB6"></rect>
+                                        <text x="185" y="77" fill="white" text-anchor="middle" font-size="14" font-weight="900" font-family="Inter">BUY</text>
+                                        <text x="185" y="90" fill="rgba(255,255,255,0.5)" text-anchor="middle" font-size="8" font-family="Inter">0.01 lot</text>
+                                    </g>
+                                    <g>
+                                        <rect x="58" y="101" width="168" height="26" rx="5" fill="#c8a820"></rect>
+                                        <text x="142" y="118" fill="#1e1f22" text-anchor="middle" font-size="11" font-weight="700" font-family="Inter">全決済</text>
+                                    </g>
+                                    <g>
+                                        <rect x="58" y="131" width="168" height="26" rx="5" fill="#35a050"></rect>
+                                        <text x="142" y="148" fill="#1e1f22" text-anchor="middle" font-size="11" font-weight="700" font-family="Inter">1/2決済</text>
+                                    </g>
+                                    <g>
+                                        <rect x="58" y="163" width="168" height="44" rx="6" fill="#1e1f22" stroke="#3f4147" stroke-width="0.5"></rect>
+                                        <circle cx="68" cy="176" r="3" fill="#50c870"></circle>
+                                        <text x="76" y="179" fill="rgba(255,255,255,0.6)" font-size="8" font-weight="600" font-family="Inter">USDJPY  Buy 0.01</text>
+                                        <text x="66" y="199" fill="rgba(255,255,255,0.4)" font-size="7.5" font-weight="600" font-family="Inter">損益</text>
+                                        <text x="218" y="200" fill="#50c870" text-anchor="end" font-size="15" font-weight="900" font-family="Inter">+1,250 円</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ytt-panel" id="ytt-p2">
+                        <div class="ytt-panel-inner">
+                            <div class="ytt-panel-text">
+                                <img src="img/crayon-2.png" alt="②" class="ytt-panel-num-img">
+                                <h3>Yトレード・シナリオ機能</h3>
+                                <p>注文前にチャート上でTP/SLを視覚的に設定。朝にシナリオをセットすればチャートに張り付かずにトレード可能。</p>
+                                <ul><li>TP/SLラインをドラッグで設定</li><li>複雑な予約注文を朝セット</li><li>ピラミッティング・自動建値</li><li>リスクリワード比を即座に確認</li></ul>
+                            </div>
+                            <div class="ytt-panel-scene">
+                                <svg viewBox="0 0 280 160" preserveAspectRatio="xMidYMid meet">
+                                    <line class="grid-line" x1="0" y1="40" x2="280" y2="40"></line>
+                                    <line class="grid-line" x1="0" y1="80" x2="280" y2="80"></line>
+                                    <line class="grid-line" x1="0" y1="120" x2="280" y2="120"></line>
+                                    <g class="candle"><line x1="14" y1="128" x2="14" y2="142" stroke="#d05555" stroke-width="1"></line><rect x="12" y="130" width="4" height="8" rx="0.5" fill="#d05555"></rect></g>
+                                    <g class="candle"><line x1="21" y1="124" x2="21" y2="140" stroke="#40b868" stroke-width="1"></line><rect x="19" y="126" width="4" height="10" rx="0.5" fill="#40b868"></rect></g>
+                                    <g class="candle"><line x1="28" y1="126" x2="28" y2="144" stroke="#d05555" stroke-width="1"></line><rect x="26" y="130" width="4" height="10" rx="0.5" fill="#d05555"></rect></g>
+                                    <g class="candle"><line x1="35" y1="122" x2="35" y2="138" stroke="#40b868" stroke-width="1"></line><rect x="33" y="124" width="4" height="10" rx="0.5" fill="#40b868"></rect></g>
+                                    <g class="candle"><line x1="42" y1="126" x2="42" y2="140" stroke="#d05555" stroke-width="1"></line><rect x="40" y="128" width="4" height="8" rx="0.5" fill="#d05555"></rect></g>
+                                    <g class="candle"><line x1="49" y1="120" x2="49" y2="142" stroke="#40b868" stroke-width="1"></line><rect x="47" y="124" width="4" height="12" rx="0.5" fill="#40b868"></rect></g>
+                                    <g class="candle"><line x1="56" y1="118" x2="56" y2="140" stroke="#d05555" stroke-width="1"></line><rect x="54" y="122" width="4" height="14" rx="0.5" fill="#d05555"></rect></g>
+                                    <g class="candle"><line x1="63" y1="112" x2="63" y2="138" stroke="#40b868" stroke-width="1"></line><rect x="61" y="116" width="4" height="15" rx="0.5" fill="#40b868"></rect></g>
+                                    <g class="candle"><line x1="70" y1="110" x2="70" y2="136" stroke="#d05555" stroke-width="1"></line><rect x="68" y="114" width="4" height="16" rx="0.5" fill="#d05555"></rect></g>
+                                    <g class="candle"><line x1="77" y1="112" x2="77" y2="140" stroke="#40b868" stroke-width="1"></line><rect x="75" y="116" width="4" height="16" rx="0.5" fill="#40b868"></rect></g>
+                                    <g class="candle"><line x1="84" y1="108" x2="84" y2="134" stroke="#d05555" stroke-width="1"></line><rect x="82" y="112" width="4" height="16" rx="0.5" fill="#d05555"></rect></g>
+                                    <g class="candle"><line x1="91" y1="106" x2="91" y2="132" stroke="#40b868" stroke-width="1"></line><rect x="89" y="110" width="4" height="14" rx="0.5" fill="#40b868"></rect></g>
+                                    <g class="candle"><line x1="98" y1="108" x2="98" y2="136" stroke="#d05555" stroke-width="1"></line><rect x="96" y="112" width="4" height="18" rx="0.5" fill="#d05555"></rect></g>
+                                    <g class="candle"><line x1="105" y1="104" x2="105" y2="130" stroke="#40b868" stroke-width="1"></line><rect x="103" y="108" width="4" height="14" rx="0.5" fill="#40b868"></rect></g>
+                                    <path d="M 107,108 L 155,35 L 192,75 L 250,10" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <g><rect x="184" y="67" width="16" height="16" rx="2" fill="rgba(0,0,0,0.7)" stroke="#ddb830" stroke-width="1.2"></rect><text x="192" y="79" fill="#ddb830" font-size="11" text-anchor="middle" font-weight="900" font-family="Inter">↑</text></g>
+                                    <g><rect x="240" y="2" width="16" height="16" rx="2" fill="rgba(0,0,0,0.7)" stroke="#ddb830" stroke-width="1.2"></rect><text x="248" y="14" fill="#50c870" font-size="11" text-anchor="middle" font-weight="900" font-family="Inter">✓</text></g>
+                                    <g><rect x="240" y="117" width="16" height="16" rx="2" fill="rgba(0,0,0,0.7)" stroke="#ddb830" stroke-width="1.2"></rect><text x="248" y="130" fill="#ddb830" font-size="11" text-anchor="middle" font-weight="900" font-family="Inter">✗</text></g>
+                                    <text x="140" y="155" fill="rgba(255,255,255,0.45)" font-size="6.5" text-anchor="middle" font-family="Inter" font-weight="600">シナリオ完成</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ytt-panel" id="ytt-p3">
+                        <div class="ytt-panel-inner">
+                            <div class="ytt-panel-text">
+                                <img src="img/crayon-3.png" alt="③" class="ytt-panel-num-img">
+                                <h3>分析サポート・オートライン</h3>
+                                <p>独自ロジックで重要ラインを自動描画。トレンド判断や経済指標もチャート上に可視化。</p>
+                                <ul><li>重要度別に色分けされた水平線</li><li>チャネルライン自動描画</li><li>トレンド方向・強さを表示</li><li>経済指標の予定を縦線で警告</li></ul>
+                            </div>
+                            <div class="ytt-panel-scene">
+                                <svg viewBox="0 0 280 210" preserveAspectRatio="xMidYMid meet">
+                                    <line x1="0" y1="52" x2="280" y2="52" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"></line>
+                                    <line x1="0" y1="105" x2="280" y2="105" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"></line>
+                                    <line x1="0" y1="158" x2="280" y2="158" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"></line>
+                                    <g>
+                                        <rect x="18" y="130" width="4" height="18" rx="0.5" fill="#40b868"></rect>
+                                        <rect x="32" y="140" width="4" height="15" rx="0.5" fill="#d05555"></rect>
+                                        <rect x="46" y="120" width="4" height="20" rx="0.5" fill="#40b868"></rect>
+                                        <rect x="60" y="128" width="4" height="14" rx="0.5" fill="#d05555"></rect>
+                                        <rect x="74" y="105" width="4" height="22" rx="0.5" fill="#40b868"></rect>
+                                        <rect x="88" y="115" width="4" height="16" rx="0.5" fill="#d05555"></rect>
+                                        <rect x="102" y="90" width="4" height="24" rx="0.5" fill="#40b868"></rect>
+                                        <rect x="116" y="100" width="4" height="18" rx="0.5" fill="#d05555"></rect>
+                                        <rect x="130" y="78" width="4" height="20" rx="0.5" fill="#40b868"></rect>
+                                        <rect x="144" y="85" width="4" height="15" rx="0.5" fill="#d05555"></rect>
+                                        <rect x="158" y="60" width="4" height="25" rx="0.5" fill="#40b868"></rect>
+                                        <rect x="172" y="70" width="4" height="18" rx="0.5" fill="#d05555"></rect>
+                                        <rect x="186" y="48" width="4" height="22" rx="0.5" fill="#40b868"></rect>
+                                    </g>
+                                    <line x1="10" y1="38" x2="205" y2="38" stroke="#d05555" stroke-width="2"></line>
+                                    <text x="207" y="41" fill="#d05555" font-size="6.5" font-weight="800" font-family="Inter">強</text>
+                                    <line x1="10" y1="82" x2="205" y2="82" stroke="#30c8dd" stroke-width="1.5"></line>
+                                    <text x="207" y="85" fill="#30c8dd" font-size="6.5" font-weight="700" font-family="Inter">中</text>
+                                    <line x1="10" y1="130" x2="205" y2="130" stroke="#30c8dd" stroke-width="1" stroke-dasharray="4,3"></line>
+                                    <text x="207" y="133" fill="#30c8dd" font-size="6.5" font-weight="700" font-family="Inter">弱</text>
+                                    <line x1="10" y1="165" x2="205" y2="165" stroke="rgba(255,255,255,0.45)" stroke-width="0.8" stroke-dasharray="3,4"></line>
+                                    <line x1="4" y1="126" x2="202" y2="41" stroke="#a78bfa" stroke-width="1.2"></line>
+                                    <line x1="4" y1="168" x2="202" y2="83" stroke="#a78bfa" stroke-width="1.2"></line>
+                                    <g>
+                                        <rect x="215" y="8" width="58" height="82" rx="5" fill="rgba(0,0,0,0.8)" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"></rect>
+                                        <text x="223" y="28" fill="rgba(255,255,255,0.55)" font-size="8.5" font-weight="700" font-family="Inter">H4</text>
+                                        <rect x="252" y="18" width="15" height="13" rx="2.5" fill="rgba(239,68,68,0.2)"></rect>
+                                        <text x="259.5" y="28.5" fill="#d05555" text-anchor="middle" font-size="10" font-weight="900" font-family="Inter">↓</text>
+                                        <text x="223" y="46" fill="rgba(255,255,255,0.55)" font-size="8.5" font-weight="700" font-family="Inter">H1</text>
+                                        <rect x="252" y="36" width="15" height="13" rx="2.5" fill="rgba(34,211,238,0.2)"></rect>
+                                        <text x="259.5" y="46.5" fill="#30c8dd" text-anchor="middle" font-size="10" font-weight="900" font-family="Inter">→</text>
+                                        <text x="223" y="64" fill="rgba(255,255,255,0.55)" font-size="8.5" font-weight="700" font-family="Inter">M15</text>
+                                        <rect x="252" y="54" width="15" height="13" rx="2.5" fill="rgba(74,222,128,0.2)"></rect>
+                                        <text x="259.5" y="64.5" fill="#50c870" text-anchor="middle" font-size="10" font-weight="900" font-family="Inter">↑</text>
+                                        <text x="223" y="82" fill="rgba(255,255,255,0.55)" font-size="8.5" font-weight="700" font-family="Inter">M5</text>
+                                        <rect x="252" y="72" width="15" height="13" rx="2.5" fill="rgba(74,222,128,0.2)"></rect>
+                                        <text x="259.5" y="82.5" fill="#50c870" text-anchor="middle" font-size="10" font-weight="900" font-family="Inter">↑</text>
+                                    </g>
+                                    <line x1="148" y1="5" x2="148" y2="190" stroke="#d05555" stroke-width="0.8"></line>
+                                    <text x="153" y="10" fill="#d05555" font-size="7" font-weight="700" font-family="Inter" writing-mode="tb">雇用統計</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ytt-panel" id="ytt-p5">
+                        <div class="ytt-panel-inner">
+                            <div class="ytt-panel-text">
+                                <img src="img/crayon-4.png" alt="④" class="ytt-panel-num-img">
+                                <h3>リスク管理</h3>
+                                <p>損失率を設定するだけでロットを自動計算。1回のトレードで冒すリスクを常に一定に保てます。</p>
+                                <ul><li>損失率固定モードでリスクを一定に管理</li><li>残高に応じてロットを自動算出</li><li>Lot固定・SL固定の2種類に対応</li></ul>
+                            </div>
+                            <div class="ytt-panel-scene">
+                                <svg viewBox="0 0 280 210" preserveAspectRatio="xMidYMid meet">
+                                    <rect x="5" y="5" width="270" height="200" rx="4" fill="#0f1523" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                                    <text x="140" y="38" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-size="12" font-weight="800" font-family="Inter">損失率固定モード</text>
+                                    <g>
+                                        <text x="60" y="68" fill="rgba(255,255,255,0.4)" font-size="8" font-family="Inter">残高</text>
+                                        <text x="220" y="68" fill="rgba(255,255,255,0.8)" text-anchor="end" font-size="12" font-weight="800" font-family="Inter">1,000,000 円</text>
+                                        <line x1="50" y1="75" x2="230" y2="75" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                                    </g>
+                                    <g>
+                                        <text x="60" y="95" fill="rgba(255,255,255,0.4)" font-size="8" font-family="Inter">許容損失率</text>
+                                        <text x="220" y="95" fill="#ddb830" text-anchor="end" font-size="14" font-weight="900" font-family="Inter">2.0 %</text>
+                                        <line x1="50" y1="102" x2="230" y2="102" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                                    </g>
+                                    <text x="140" y="122" fill="rgba(255,255,255,0.25)" text-anchor="middle" font-size="14" font-family="Inter">↓</text>
+                                    <g>
+                                        <text x="60" y="145" fill="rgba(255,255,255,0.4)" font-size="8" font-family="Inter">最大損失額</text>
+                                        <text x="220" y="145" fill="#d05555" text-anchor="end" font-size="13" font-weight="800" font-family="Inter">20,000 円</text>
+                                        <line x1="50" y1="152" x2="230" y2="152" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                                    </g>
+                                    <g>
+                                        <rect x="59" y="160" width="180" height="30" rx="6" fill="rgba(74,222,128,0.08)" stroke="#50c870" stroke-width="0.8"/>
+                                        <text x="69" y="180" fill="rgba(74,222,128,0.6)" font-size="9" font-weight="600" font-family="Inter">推奨ロット</text>
+                                        <text x="229" y="181" fill="#50c870" text-anchor="end" font-size="16" font-weight="900" font-family="Inter">0.15</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- YTT Simulator -->
+        <div class="ytt-sim-section">
+            <h3 class="ytt-sim-title">YTTを実際に操作してみよう</h3>
+            <p class="ytt-sim-lead">チュートリアルに沿ってトレードの流れを体験できます</p>
+            <div class="ytt-sim-frame" id="ytt-sim-frame">
+                <div class="ytt-sim-mobile-msg">
+                    <p style="font-size:1.1rem;font-weight:800;margin-bottom:0.5rem;">PC専用コンテンツです</p>
+                    <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.7;">このシミュレーターはPCでのみ<br>ご利用いただけます。<br>パソコンからアクセスしてください。</p>
+                </div>
+                <iframe src="ytt-simulator-reserve.html" loading="lazy"></iframe>
+            </div>
+            <button class="ytt-sim-exit-btn" id="ytt-sim-exit-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+                デモを閉じる
+            </button>
+        </div>
+    </div>
+</section>
+<div id="ytt-sim-fs-overlay"></div>
+<hr class="section-divider">
+<!-- =============================================
+     稼ぐ — Fintokei シミュレーター
+     ============================================= -->
+<section class="earn-section" id="earn">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--purple bg-geo--center" aria-hidden="true">
+    <div class="earn-inner">
+        <span class="section-title-badge section-title-badge--blue"><img class="hero-title-side hero-title-side--left" src="img/title-side-blue-left.png" alt="">どうやって稼ぐのか？<img class="hero-title-side hero-title-side--right" src="img/title-side-blue-right.png" alt=""></span>
+        <h2 class="heading-lg"><img src="images/fintokei-logo-purple.png" alt="Fintokei" class="earn-fintokei-logo">で、<br>スキルを報酬に変える。</h2>
+        <p class="earn-lead">FX SPACEで身につけたスキルで、仮想残高を運用。<br>利益があなたの報酬になります。</p>
+
+        <!-- What is Fintokei -->
+        <div class="earn-info-box">
+            <p class="earn-info-title">Fintokei（フィントケイ）とは？</p>
+            <p class="earn-info-body">
+                <strong>プロップファーム</strong>とは、会社の資金をトレーダーに提供し、その運用益を分配する仕組みのこと。
+                Fintokeiはその日本向けサービスで、<strong>運用の自己資金なし</strong>で最大5,000万円の仮想残高を運用でき、<strong>利益の最大80〜100%</strong>が報酬として受け取れます。
+            </p>
+        </div>
+
+        <!-- Graph -->
+        <div class="earn-graph-card">
+            <div class="earn-graph-header">
+                <p class="earn-graph-title">累計利益シミュレーション</p>
+                <p id="fintokei-graph-label" class="earn-graph-label">エメラルド / 月利3% / 12ヶ月</p>
+            </div>
+            <p class="earn-graph-note">※ 毎月出金する単利運用での利益推移です。チャレンジプランは出金時に利益の20%がFintokeiの手数料となります。速攻プロプランは手数料なし（報酬100%）です。</p>
+            <canvas id="fintokei-chart" width="680" height="300" class="earn-canvas"></canvas>
+        </div>
+
+        <!-- Results -->
+        <div class="earn-results-grid">
+            <div class="earn-result-card">
+                <p class="earn-result-label">月あたり報酬額</p>
+                <p id="fintokei-monthly" class="earn-result-value earn-result-primary">-</p>
+            </div>
+            <div class="earn-result-card">
+                <p class="earn-result-label">総報酬額</p>
+                <p id="fintokei-total" class="earn-result-value earn-result-accent">-</p>
+            </div>
+        </div>
+
+        <!-- Simulator Controls -->
+        <div class="earn-sim-card">
+            <p class="earn-sim-title">簡易シミュレーター</p>
+            <div class="earn-sim-grid">
+                <div class="fk-plan-col">
+                    <label class="earn-label">プラン</label>
+                    <input type="hidden" id="fintokei-plan" value="challenge-emerald">
+                    <div class="fk-plan-selector" id="fk-plan-selector">
+                        <button type="button" class="fk-plan-toggle" id="fk-plan-toggle">
+                            <span class="fk-plan-toggle-text" id="fk-plan-toggle-text">エメラルド（5,000万円）</span>
+                            <svg class="fk-plan-arrow" viewBox="0 0 12 12" width="12" height="12"><path d="M3 5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="fk-plan-dropdown" id="fk-plan-dropdown">
+                            <p class="fk-plan-group-label">速攻プロプラン<span class="fk-plan-badge fk-plan-badge-gold">報酬100%</span></p>
+                            <button type="button" class="fk-plan-option" data-value="sokko-bronze">ブロンズ<span class="fk-plan-amount">200万円</span></button>
+                            <button type="button" class="fk-plan-option" data-value="sokko-silver">シルバー<span class="fk-plan-amount">500万円</span></button>
+                            <button type="button" class="fk-plan-option" data-value="sokko-gold">ゴールド<span class="fk-plan-amount">1,000万円</span></button>
+                            <button type="button" class="fk-plan-option" data-value="sokko-platinum">プラチナ<span class="fk-plan-amount">2,000万円</span></button>
+                            <button type="button" class="fk-plan-option" data-value="sokko-diamond">ダイヤモンド<span class="fk-plan-amount">3,500万円</span></button>
+                            <div class="fk-plan-divider"></div>
+                            <p class="fk-plan-group-label">チャレンジプラン<span class="fk-plan-badge fk-plan-badge-purple">報酬80%</span></p>
+                            <button type="button" class="fk-plan-option" data-value="challenge-crystal">クリスタル<span class="fk-plan-amount">200万円</span></button>
+                            <button type="button" class="fk-plan-option" data-value="challenge-pearl">パール<span class="fk-plan-amount">500万円</span></button>
+                            <button type="button" class="fk-plan-option" data-value="challenge-ruby">ルビー<span class="fk-plan-amount">1,000万円</span></button>
+                            <button type="button" class="fk-plan-option" data-value="challenge-sapphire">サファイア<span class="fk-plan-amount">2,000万円</span></button>
+                            <button type="button" class="fk-plan-option" data-value="challenge-topaz">トパーズ<span class="fk-plan-amount">3,500万円</span></button>
+                            <button type="button" class="fk-plan-option fk-plan-active" data-value="challenge-emerald">エメラルド<span class="fk-plan-amount">5,000万円</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="earn-label">月利（%）</label>
+                    <input id="fintokei-rate" type="number" value="3" min="0.5" max="20" step="0.5" class="earn-input">
+                </div>
+                <div>
+                    <label class="earn-label">継続月数</label>
+                    <input id="fintokei-months" type="number" value="12" min="1" max="60" step="1" class="earn-input">
+                </div>
+            </div>
+            <p class="earn-sim-note">※ あくまで簡易シミュレーションです。実際の報酬は運用成績により変動します。<br>詳細は <a href="https://my.fintokei.com/affiliate/jp/55" target="_blank" class="earn-link">Fintokei公式ページ</a> をご確認ください。</p>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+<!-- =============================================
+     4. COMMUNITY — 覗き見体験
+     ============================================= -->
+<section class="community-section" id="community">
+    <div class="section-glow section-glow--green-r"></div>
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--green bg-geo--center-right" aria-hidden="true">
+    <div class="community-inner">
+        <span class="section-title-badge section-title-badge--blue"><img class="hero-title-side hero-title-side--left" src="img/title-side-blue-left.png" alt="">続けられるか？<img class="hero-title-side hero-title-side--right" src="img/title-side-blue-right.png" alt=""></span>
+        <h2 class="heading-lg">一人で悩まない。<br>仲間がいる。</h2>
+        <div class="community-logo-wrap">
+            <img src="images/discord-logo.png" alt="Discord" class="community-discord-logo">
+        </div>
+        <p class="community-lead">初心者の質問にも、よすが本人や現役のプロトレーダーたちが答えてくれる。<br>そんなコミュニティ、他にありますか？</p>
+
+        <div class="community-carousel" id="community-carousel">
+            <button class="community-carousel-arrow community-carousel-prev" id="cc-prev" aria-label="前へ">&#8249;</button>
+            <div class="community-carousel-track" id="cc-track">
+
+                <!-- 1: 初心者応援 -->
+                <div class="community-carousel-slide">
+                    <div class="community-chat static-chat">
+                        <div class="cc-header"><span class="cc-header-hash">#</span><span class="cc-header-name">初心者応援</span></div>
+                        <div class="cc-body">
+                            <div class="cc-messages">
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#5865f2;">C</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#5865f2;">craft beer</span><span class="cc-msg-time">02/16 12:18</span></div><div class="cc-msg-content">何度も資金を溶かしました… 成功してる方は何が違うのでしょう？😢</div><div class="cc-reactions"><span class="cc-reaction visible">😢 <span class="cc-reaction-count">3</span></span></div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar cc-avatar-yosuga"></div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">よすが</span><span class="cc-msg-time">02/16 12:30</span></div><div class="cc-reply-quote">何度も資金を溶かしました… 成功してる方は何が違う？</div><div class="cc-msg-content">センスは不要。決められた通りにできるかがポイント。シナリオ構築を続けよう🔥</div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#5865f2;">C</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#5865f2;">craft beer</span><span class="cc-msg-time">02/16 12:45</span></div><div class="cc-reply-quote">センスは不要。決められた通りにできるかが…</div><div class="cc-msg-content">ありがとうございます。温かいお言葉が嬉しいです🙏</div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#eb459e;">H</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#eb459e;">HiU</span><span class="cc-msg-time">02/16 13:02</span></div><div class="cc-reply-quote">何度も資金を溶かしました…</div><div class="cc-msg-content">6ヶ月デモで練習して、4H足でトレンド揃えてから入ったら勝率上がったよ！</div><div class="cc-reactions"><span class="cc-reaction visible">💪 <span class="cc-reaction-count">9</span></span><span class="cc-reaction visible">🔥 <span class="cc-reaction-count">6</span></span></div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar cc-avatar-yosuga"></div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">よすが</span><span class="cc-msg-time">02/16 13:10</span></div><div class="cc-msg-content">「負けてはいけない」をまず疑おう。今日はこうだった→次こうしよう、でOK👍</div><div class="cc-reactions"><span class="cc-reaction visible">❤️ <span class="cc-reaction-count">22</span></span><span class="cc-reaction visible">🙏 <span class="cc-reaction-count">15</span></span></div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#57f287;">M</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#57f287;">Mochi</span><span class="cc-msg-time">今日 09:15</span></div><div class="cc-msg-content">今月から参加！Fintokei 3万円プラン今月負けなしです🙏</div><div class="cc-reactions"><span class="cc-reaction visible">🎉 <span class="cc-reaction-count">14</span></span><span class="cc-reaction visible">👏 <span class="cc-reaction-count">11</span></span></div></div></div>
+                            </div>
+                        </div>
+                        <div class="cc-input"><span class="cc-input-plus">＋</span><span class="cc-input-text">#初心者応援 でメッセージを送信</span></div>
+                    </div>
+                </div>
+
+                <!-- 2: プロに質問 -->
+                <div class="community-carousel-slide">
+                    <div class="community-chat static-chat">
+                        <div class="cc-header"><span class="cc-header-hash">#</span><span class="cc-header-name">プロに質問</span></div>
+                        <div class="cc-body">
+                            <div class="cc-messages">
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#fee75c;color:#000;">K</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#fee75c;">Kenta_FX</span><span class="cc-msg-time">02/13 20:14</span></div><div class="cc-msg-content">チャネル上限にぶつかってるように見えるのですが🤔</div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#ed4245;">r</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">robuta</span><span class="cc-msg-time">02/13 21:30</span></div><div class="cc-reply-quote">チャネル上限にぶつかってるように見える…</div><div class="cc-msg-content">「トレンド転換の確認」がキーですね💦</div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#fee75c;color:#000;">K</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#fee75c;">Kenta_FX</span><span class="cc-msg-time">02/14 08:22</span></div><div class="cc-reply-quote">トレンド転換の確認がキー…</div><div class="cc-msg-content">1H足のシナリオ描画にすべき？上昇転換ポイントが掴めません…</div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#ed4245;">r</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">robuta</span><span class="cc-msg-time">02/14 09:05</span></div><div class="cc-reply-quote">上昇転換ポイントが掴めません…</div><div class="cc-msg-content">日足で転換未確認。上昇トレンド内とは言えないです📝</div><div class="cc-reactions"><span class="cc-reaction visible">🔥 <span class="cc-reaction-count">5</span></span><span class="cc-reaction visible">📝 <span class="cc-reaction-count">3</span></span></div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar cc-avatar-yosuga"></div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">よすが</span><span class="cc-msg-time">02/14 12:40</span></div><div class="cc-reply-quote">チャネル上限にぶつかってるように見える…</div><div class="cc-msg-content">日足も下降トレンドとします📉 ラインあらためて表示しますね。</div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#fee75c;color:#000;">K</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#fee75c;">Kenta_FX</span><span class="cc-msg-time">02/14 13:15</span></div><div class="cc-reply-quote">日足も下降トレンドとします📉…</div><div class="cc-msg-content">シンプルでわかりやすいです！ありがとうございます🙏</div><div class="cc-reactions"><span class="cc-reaction visible">😊 <span class="cc-reaction-count">7</span></span></div></div></div>
+                            </div>
+                        </div>
+                        <div class="cc-input"><span class="cc-input-plus">＋</span><span class="cc-input-text">#プロに質問 でメッセージを送信</span></div>
+                    </div>
+                </div>
+
+                <!-- 3: 雑談 -->
+                <div class="community-carousel-slide">
+                    <div class="community-chat static-chat">
+                        <div class="cc-header"><span class="cc-header-hash">#</span><span class="cc-header-name">雑談</span></div>
+                        <div class="cc-body">
+                            <div class="cc-messages">
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#eb459e;">熊</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#eb459e;">熊</span><span class="cc-msg-time">02/14 11:20</span></div><div class="cc-msg-content">塩分過剰摂取で血圧が上昇トレンドに🤣<div class="cc-photo"><div class="cc-photo-item"><img src="images/chat_photo_2.png" alt="ラーメン" style="width:100%;height:100%;object-fit:cover;"></div></div></div><div class="cc-reactions"><span class="cc-reaction visible">🤣 <span class="cc-reaction-count">15</span></span><span class="cc-reaction visible">👍 <span class="cc-reaction-count">3</span></span></div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#5865F2;">S</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#5865F2;">Sana</span><span class="cc-msg-time">02/14 11:52</span></div><div class="cc-reply-quote">塩分過剰摂取で血圧が上昇トレンドに🤣</div><div class="cc-msg-content">おいしそう🤤</div><div class="cc-reactions"><span class="cc-reaction visible">👍 <span class="cc-reaction-count">1</span></span></div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#ffb347;color:#000;">や</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ffb347;">やまちゃん</span><span class="cc-msg-time">02/15 20:10</span></div><div class="cc-msg-content">松島海岸へ🚅 寿司食べ放題コスパ最強！<div class="cc-photo"><div class="cc-photo-item"><img src="images/chat_photo_3.png" alt="お寿司" style="width:80%;height:80%;object-fit:contain;"></div></div></div><div class="cc-reactions"><span class="cc-reaction visible">🔥 <span class="cc-reaction-count">8</span></span><span class="cc-reaction visible">😋 <span class="cc-reaction-count">5</span></span></div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar cc-avatar-yosuga"></div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">よすが</span><span class="cc-msg-time">02/15 20:25</span></div><div class="cc-reply-quote">松島海岸へ🚅 寿司食べ放題コスパ最強！</div><div class="cc-msg-content">え！？こんなでかいのあるんすか！？</div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#57f287;">Y</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#57f287;">Yuichi</span><span class="cc-msg-time">昨日 22:05</span></div><div class="cc-msg-content">エンドフィールド神ゲー😃 フレンド追加して！</div><div class="cc-reactions"><span class="cc-reaction visible">🎮 <span class="cc-reaction-count">6</span></span></div></div></div>
+                                <div class="cc-msg"><div class="cc-avatar" style="background:#ffb347;color:#000;">や</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ffb347;">やまちゃん</span><span class="cc-msg-time">昨日 22:20</span></div><div class="cc-reply-quote">エンドフィールド神ゲー😃 フレンド追加して！</div><div class="cc-msg-content">おもしろい！！申請しました🎉</div><div class="cc-reactions"><span class="cc-reaction visible">🎮 <span class="cc-reaction-count">9</span></span><span class="cc-reaction visible">👏 <span class="cc-reaction-count">4</span></span></div></div></div>
+                            </div>
+                        </div>
+                        <div class="cc-input"><span class="cc-input-plus">＋</span><span class="cc-input-text">#雑談 でメッセージを送信</span></div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="community-carousel-arrow community-carousel-next" id="cc-next" aria-label="次へ">&#8250;</button>
+            <div class="community-carousel-dots">
+                <button class="community-carousel-dot active" data-index="0"></button>
+                <button class="community-carousel-dot" data-index="1"></button>
+                <button class="community-carousel-dot" data-index="2"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+<!-- =============================================
+     5. FOUNDER — よすがの存在感
+     ============================================= -->
+<section class="founder-section" id="founder">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--blue bg-geo--top-right" aria-hidden="true">
+    <div class="founder-inner">
+        <span class="section-title-badge section-title-badge--blue"><img class="hero-title-side hero-title-side--left" src="img/title-side-blue-left.png" alt="">誰が作っているのか？<img class="hero-title-side hero-title-side--right" src="img/title-side-blue-right.png" alt=""></span>
+        <h2 class="founder-section-title">主宰者</h2>
+        <div class="founder-spread">
+            <div class="founder-profile">
+                <div class="founder-avatar-ring">
+                    <div class="founder-avatar"><img src="images/chat_photo_4.png" alt="よすが"></div>
+                </div>
+                <h2 class="founder-name">よすが</h2>
+                <div class="founder-sns">
+                    <a href="https://x.com/yosuga____" target="_blank"><img src="img/icon-x.png" alt="X"></a>
+                    <a href="https://www.youtube.com/@fxyosuga" target="_blank"><img src="img/icon-youtube.png" alt="YouTube"></a>
+                    <a href="https://discord.gg/CcUtqSdRDZ" target="_blank"><img src="img/icon-discord.png" alt="Discord"></a>
+                </div>
+            </div>
+
+            <ul class="founder-creds">
+                <li>認定テクニカルアナリスト（CMTA®）</li>
+                <li>トレーダー歴 7年</li>
+                <li>プロトレーダー 420人以上輩出</li>
+                <li>書籍「結果を勝ち取る！本気のFX」共著</li>
+            </ul>
+
+            <blockquote class="founder-quote">
+                <p>「FXで人生を変える」を冗談じゃなく<br>本気で実現できる環境を作りました。</p>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+<!-- =============================================
+     6. PRICING — シンプルに
+     ============================================= -->
+<section class="pricing-section" id="pricing">
+    <div class="section-glow section-glow--indigo-center"></div>
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--purple bg-geo--center" aria-hidden="true">
+    <div class="pricing-inner">
+        <div class="pricing-header">
+            <span class="section-title-badge section-title-badge--blue"><img class="hero-title-side hero-title-side--left" src="img/title-side-blue-left.png" alt="">始めるには？<img class="hero-title-side hero-title-side--right" src="img/title-side-blue-right.png" alt=""></span>
+            <h2 class="heading-lg text-center">3つのプランから選ぶだけ。</h2>
+        </div>
+        <div class="plan-carousel" id="plan-carousel">
+            <div class="plan-carousel-track">
+                <!-- Free -->
+                <div class="plan-carousel-slide">
+                    <div class="plan-card">
+                        <div class="plan-name" style="color:#9ca3af;">フリー</div>
+                        <div class="plan-price-wrap">
+                            <div class="plan-price-free">¥0</div>
+                        </div>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features">
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">速攻プロフローチャート</span></li>
+                        </ul>
+                        <a href="https://discord.gg/CcUtqSdRDZ" target="_blank" class="btn plan-cta plan-cta-outline">無料で始める →</a>
+                    </div>
+                </div>
+                <!-- Standard -->
+                <div class="plan-carousel-slide">
+                    <div class="plan-card plan-recommended">
+                        <div class="plan-badge plan-badge-rec">おすすめ</div>
+                        <div class="plan-name">スタンダード</div>
+                        <div class="plan-price-wrap">
+                            <span class="plan-price-amount">¥2,900</span><span class="plan-price-period">/月</span>
+                        </div>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features">
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">毎日のシナリオ動画</span></li>
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">ゼロプロ90</span></li>
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">YTT</span></li>
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">プロに質問し放題</span></li>
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">AIサポート</span></li>
+                        </ul>
+                        <p class="plan-more">ほか多数の機能を利用可能</p>
+                        <a href="https://discord.gg/CcUtqSdRDZ" target="_blank" class="btn plan-cta plan-cta-primary">詳しくはDiscordで →</a>
+                    </div>
+                </div>
+                <!-- Premium -->
+                <div class="plan-carousel-slide">
+                    <div class="plan-card">
+                        <div class="plan-badge plan-badge-premium">全機能解放</div>
+                        <div class="plan-name" style="color:#818cf8;">プレミアム</div>
+                        <div class="plan-price-wrap">
+                            <span class="plan-price-amount">¥5,410~</span><span class="plan-price-period">/月</span>
+                        </div>
+                        <div class="plan-price-sub">年払い ¥64,900/年 ｜ 月払い ¥5,900/月</div>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features">
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">スタンダードの全機能</span></li>
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">ライブチャート分析</span></li>
+                            <li><span class="pf-icon pf-icon-check"><img src="img/check-orange.png" alt="✓"></span><span class="pf-text">トレード交流</span></li>
+                        </ul>
+                        <a href="https://discord.gg/CcUtqSdRDZ" target="_blank" class="btn plan-cta plan-cta-outline">詳しくはDiscordで →</a>
+                    </div>
+                </div>
+            </div>
+            <button class="plan-carousel-arrow plan-carousel-prev" id="plan-carousel-prev" aria-label="前のプラン">&#8249;</button>
+            <button class="plan-carousel-arrow plan-carousel-next" id="plan-carousel-next" aria-label="次のプラン">&#8250;</button>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+<!-- =============================================
+     FAQ
+     ============================================= -->
+<section class="faq-section" id="faq">
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--blue bg-geo--faq" aria-hidden="true">
+    <div class="faq-inner">
+        <h2 class="heading-lg text-center">よくある質問</h2>
+        <div class="community-chat static-chat faq-chat" id="faq-chat">
+            <div class="cc-header"><span class="cc-header-hash">#</span><span class="cc-header-name">よくある質問</span></div>
+            <div class="cc-body" id="faq-chat-body">
+                <div class="cc-messages" id="faq-messages">
+                    <div class="cc-msg faq-welcome-msg"><div class="cc-avatar cc-avatar-yosuga faq-welcome-avatar"></div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name faq-welcome-name" style="color:#ed4245;">よすが</span><span class="cc-msg-time">今日 10:00</span></div><div class="cc-msg-content faq-welcome-content">気になることがあれば何でも聞いてください！<br>下の質問をクリックすると回答します👇</div></div></div>
+                </div>
+            </div>
+            <div class="faq-choices" id="faq-choices">
+                <button class="faq-choice" data-faq-idx="0" style="--i:0">FX未経験でも大丈夫？</button>
+                <button class="faq-choice" data-faq-idx="1" style="--i:1">Fintokeiって何？</button>
+                <button class="faq-choice" data-faq-idx="2" style="--i:2">必要な費用は？</button>
+                <button class="faq-choice" data-faq-idx="3" style="--i:3">仕事や学校と両立できる？</button>
+                <button class="faq-choice" data-faq-idx="4" style="--i:4">他との違いは？</button>
+                <button class="faq-choice" data-faq-idx="5" style="--i:5">途中で解約できる？</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-divider">
+<!-- =============================================
+     7. FINAL CTA — 背中を押す
+     ============================================= -->
+<section class="cta-section" id="cta">
+    <div class="section-glow section-glow--cta"></div>
+    <img src="images/bg-geo-3d.png" alt="" class="bg-geo bg-geo--mix bg-geo--center" aria-hidden="true">
+    <h2 class="heading-xl">本気なら、ここしかない。</h2>
+
+    <p class="subtitle">まずは無料のDiscordから覗いてみてください。</p>
+    <a href="https://discord.gg/CcUtqSdRDZ" target="_blank" class="btn btn-crayon-rect-orange">無料でDiscordに参加する →</a>
+    <div class="cta-sublink">
+        <a href="https://www.youtube.com/@fxyosuga" target="_blank">よすがのYouTubeを見る →</a>
+    </div>
+    <div class="cta-footer-bottom">
+        <p>&copy; 2026 FX SPACE. All rights reserved.</p>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/gsap.min.js"></script>
+<div class="ambient-orbs" aria-hidden="true">
+    <div class="ambient-orb ambient-orb--1"></div>
+    <div class="ambient-orb ambient-orb--2"></div>
+    <div class="ambient-orb ambient-orb--3"></div>
+</div>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/hero-globe.js"></script>
+<script src="js/lp.js"></script>
+</body>
+</html>
