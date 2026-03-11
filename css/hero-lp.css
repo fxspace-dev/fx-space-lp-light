@@ -277,6 +277,14 @@
     border-color: var(--primary) !important;
 }
 
+/* ── YTT LP override (single panel, no sticky scroll) ── */
+.hero.hero-lp ~ .ytt-section .ytt-panel {
+    height: auto;
+    position: relative;
+    top: auto;
+    padding: 2rem 2rem 1rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
     .bg-geo { width: 500px; }

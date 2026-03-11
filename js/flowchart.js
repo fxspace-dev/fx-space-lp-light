@@ -689,9 +689,23 @@ function setupAnimations() {
     var yttPanelAnims = [animateYttP1, animateCandles, animateYttP3, animateYttP5];
     var yttSceneIds = ['#scene-ytt-p1', '#scene-ytt', '#scene-ytt-p3', '#scene-ytt-p5'];
     var yttAnimPlayed = [false, false, false, false];
+    // LP-light: only panel 1 exists — use simple fade instead of scrub
+    var isLpLight = !!document.querySelector('.hero.hero-lp');
     for (var pi = 0; pi < 4; pi++) {
         (function(idx) {
             var panelId = '#ytt-p' + (idx + 1);
+            if (!document.querySelector(panelId)) return; // skip missing panels
+            if (isLpLight) {
+                // Simple scroll-triggered fade-in for LP-light
+                gsap.set(panelId + ' .ytt-panel-text', { opacity: 1, x: 0 });
+                gsap.set(yttSceneIds[idx], { opacity: 1, scale: 1 });
+                // Just trigger the SVG animation on scroll
+                var st = ScrollTrigger.create({ trigger: panelId, start: 'top 70%', onEnter: function() {
+                    if (!yttAnimPlayed[idx]) { yttAnimPlayed[idx] = true; yttPanelAnims[idx](); }
+                }, once: true });
+                scrollTriggerInstances.push(st);
+                return;
+            }
             var tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: panelId,
