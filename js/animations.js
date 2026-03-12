@@ -1347,6 +1347,58 @@ function drawFintokeiChart(data, months, refBalance) {
 
 })();
 
+// ── FAQ interactive chat ──
+(function() {
+    var faqData = [
+        { q: 'FX未経験でも大丈夫？', a: 'もちろん！メンバーの約半数が未経験スタートです。ゼロプロ90は完全初心者向けのカリキュラムだし、デモトレードから始めるので安心してください👍', reactions: '🙏 24 💪 18' },
+        { q: 'Fintokeiって何？', a: 'プロップファームと呼ばれるもので、チャレンジプランを購入してデモ口座で利益目標を達成すると、仮想資金で運用し利益の80%以上を出金できる仕組みです。自分の資金を使わずに稼げるのが魅力ですね🔥', reactions: '🔥 31' },
+        { q: 'どんな人が参加してる？', a: '会社員、学生、主婦、フリーランス…本当にいろんな方がいます！共通してるのは「本気で変わりたい」という気持ち。年齢も20代〜50代まで幅広いですよ😊', reactions: '😊 20 👏 12' },
+        { q: '仕事や学校と両立できる？', a: 'できます！むしろ会社員や学生の方も多いです。シナリオ動画は毎朝出すのでスキマ時間にチェックできるし、トレード自体も1日15〜30分あればOK。無理なく続けられますよ👌', reactions: '👍 22 ❤️ 9' },
+        { q: '他との違いは？', a: '僕自身がほぼ毎日シナリオ動画を出して、質問にも直接答えてるところ。あとは独自ツールYTTと、420名以上のプロ輩出という結果ですね。口だけじゃなく数字で証明してます📊', reactions: '🔥 27 👏 14' },
+        { q: 'Discordって何？初めてでも使える？', a: '無料のチャットアプリです！LINEグループみたいなイメージで、スマホでもPCでも使えます。初めての方も多いですが、みんなすぐ慣れてますよ。参加後にわからないことがあれば気軽に聞いてください🙆‍♂️', reactions: '🙏 19 😊 11' }
+    ];
+    var messages = document.getElementById('faq-messages');
+    var body = document.getElementById('faq-chat-body');
+    var choices = document.querySelectorAll('.faq-choice');
+    if (!messages || !choices.length) return;
+
+    function scrollToBottom() {
+        setTimeout(function() { body.scrollTop = body.scrollHeight; }, 50);
+    }
+
+    function makeReactions(str) {
+        var parts = str.split(' ');
+        var html = '';
+        for (var i = 0; i < parts.length; i += 2) {
+            html += '<span class="cc-reaction visible">' + parts[i] + ' <span class="cc-reaction-count">' + parts[i + 1] + '</span></span>';
+        }
+        return html;
+    }
+
+    function postQuestion(idx) {
+        var data = faqData[idx];
+        var userMsg = document.createElement('div');
+        userMsg.className = 'cc-msg faq-msg-new';
+        userMsg.innerHTML = '<div class="cc-avatar" style="background:#fff;">👤</div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#5865f2;">あなた</span><span class="cc-msg-time">今</span></div><div class="cc-msg-content">' + data.q + '</div></div>';
+        messages.appendChild(userMsg);
+        scrollToBottom();
+
+        setTimeout(function() {
+            var replyMsg = document.createElement('div');
+            replyMsg.className = 'cc-msg faq-msg-new';
+            replyMsg.innerHTML = '<div class="cc-avatar cc-avatar-yosuga"></div><div class="cc-msg-body"><div class="cc-msg-header"><span class="cc-msg-name" style="color:#ed4245;">よすが</span><span class="cc-msg-time">今</span></div><div class="cc-reply-quote">' + data.q + '</div><div class="cc-msg-content">' + data.a + '</div><div class="cc-reactions">' + makeReactions(data.reactions) + '</div></div>';
+            messages.appendChild(replyMsg);
+            scrollToBottom();
+        }, 1000);
+    }
+
+    choices.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            postQuestion(parseInt(this.getAttribute('data-faq-idx')));
+        });
+    });
+})();
+
 // ---- Plan carousel ----
 function initPlanCarousel() {
     var slides = document.querySelectorAll('.plan-carousel-slide');
