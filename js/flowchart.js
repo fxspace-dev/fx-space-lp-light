@@ -234,7 +234,7 @@ function revealHeroChart() {
                                 // Count-up
                                 var obj = { pros: 0, amount: 0 };
                                 t3.to(obj, {
-                                    pros: 420, duration: 1.4, ease: 'power2.out',
+                                    pros: 430, duration: 1.4, ease: 'power2.out',
                                     onUpdate: function() { prosEl.textContent = Math.round(obj.pros); }
                                 }, 0.9);
                                 t3.to(obj, {
