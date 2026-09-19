@@ -1,13 +1,13 @@
 {
-  "pro_traders": 494,
-  "withdrawal_yen": 169040000,
-  "profit_yen": 1061900000,
-  "prop_passed": 375,
+  "pro_traders": 495,
+  "withdrawal_yen": 178370000,
+  "profit_yen": 1067860000,
+  "prop_passed": 394,
   "source": {
-    "pro": "🪐プロトレ：494人",
-    "withdrawal": "💰プロップ出金：＋￥1億6904万",
-    "profit": "💰利確額：＋￥10億6190万",
-    "passed": "⭐プロップ合格：375人"
+    "pro": "🪐プロトレ：495人",
+    "withdrawal": "💰プロップ出金：＋￥1億7837万",
+    "profit": "💰利確額：＋￥10億6786万",
+    "passed": "⭐プロップ合格：394人"
   },
-  "updated_at": "2026-09-18T03:40:02.359Z"
+  "updated_at": "2026-09-19T05:20:00.392Z"
 }
